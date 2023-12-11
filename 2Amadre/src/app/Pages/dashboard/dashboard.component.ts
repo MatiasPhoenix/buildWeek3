@@ -13,6 +13,7 @@ export class DashboardComponent {
 
   test(){
     return this.svc.getMovies(this.movie).subscribe(data => {
+      this.movies = []
       this.movies.push(data.Search)
       console.log(data.Search)
       console.log(this.movies)
