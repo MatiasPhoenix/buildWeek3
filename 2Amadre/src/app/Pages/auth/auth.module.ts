@@ -21,7 +21,6 @@ import { BrowserModule } from '@angular/platform-browser';
     AuthRoutingModule,
     HttpClientModule,
     FormsModule,
-    // BrowserModule
   ]
 })
 export class AuthModule { }
