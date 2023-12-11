@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <h5 class="col-8 mt-5 mb-3">Login</h5>
+    <form class="col-8">
+      <input type="email" [(ngModel)]="loginData.email"
+      name="email" class="form-control mt-1" placeholder="Email">
+      <input type="password" [(ngModel)]="loginData.password"
+      name="password" class="form-control mt-1" placeholder="Password">
+      <button (click)="saveLogin()" class="btn btn-primary mt-3">Login</button>
+     </form>
+   </div>
+ </div>
