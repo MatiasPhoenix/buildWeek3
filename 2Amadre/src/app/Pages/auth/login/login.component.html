@@ -9,5 +9,6 @@
       name="password" class="form-control mt-1" placeholder="Password">
       <button (click)="saveLogin()" class="btn btn-primary mt-3">Login</button>
      </form>
+     <div *ngIf="errorMessage" class="bg-danger mt-3 rounded rounded-3 py-2">Credenziali Non Valide</div>
    </div>
  </div>

@@ -9,6 +9,7 @@ import { iLogin } from '../Models/login';
   styleUrl: './login.component.scss'
 })
 export class LoginComponent {
+  errorMessage!: string;
 
   constructor(
     private authSvc:AuthService,
@@ -24,6 +25,14 @@ export class LoginComponent {
     this.authSvc.login(this.loginData)
     .subscribe(data => {
         this.router.navigate(['/dashboard']);
-    })
+    },
+    error => {
+      // Gestione dell'errore
+      console.error('Errore durante il login:', error);
+        this.errorMessage = '0'
+        console.log(this.errorMessage);
+
+      }
+      )
   }
 }

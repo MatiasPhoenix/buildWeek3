@@ -44,8 +44,6 @@ export class AuthService {
 
       this.authSubject.next(data)
       localStorage.setItem('accessData',JSON.stringify(data))
-
-
       this.autoLogout(data.accessToken)
     }))
   }
