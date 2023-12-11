@@ -23,16 +23,15 @@ export class LoginComponent {
 
   saveLogin(){
     this.authSvc.login(this.loginData)
-    .subscribe(data => {
+    .subscribe({
+      next:data => {
         this.router.navigate(['/dashboard']);
     },
-    error => {
-      // Gestione dell'errore
+    error: error => {
       console.error('Errore durante il login:', error);
         this.errorMessage = '0'
         console.log(this.errorMessage);
-
       }
-      )
+    })
   }
 }
