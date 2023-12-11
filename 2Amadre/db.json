@@ -1,5 +1,16 @@
 {
-  "users":[
-
+  "users": [
+    {
+      "email": "carmelo@zappulla.com",
+      "password": "$2a$10$89Q3jpijivUW8BKHRKxU/uuGsc8NhH/EjnsDLcegKk/4hgc4cMMTe",
+      "nome": "carmelo",
+      "id": 1
+    },
+    {
+      "email": "mario@rossi.it",
+      "password": "$2a$10$pmQRwG1KuP80bxfbqmvotuqelW6TqvbjeBgq3XvB9nnCyF7DOYEdu",
+      "nome": "mario",
+      "id": 2
+    }
   ]
 }
