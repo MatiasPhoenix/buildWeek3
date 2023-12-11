@@ -6,12 +6,18 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class DashboardService {
-  private apiKey: string = '';
+  private apiKey: string = 'f8f45844';
   //
   constructor(private http:HttpClient) {}
 
   getMovie(movie: string): Observable<any> {
-    const apiUrl=`http://www.omdbapi.com/?apikey=${this.apiKey}&?t=${movie}`
+    const apiUrl=`http://www.omdbapi.com/?t=${movie}&apikey=${this.apiKey}`
     return this.http.get(apiUrl);
   }
+
+  getMovies(movie: string): Observable<any> {
+    const apiUrl=`http://www.omdbapi.com/?s=${movie}&apikey=${this.apiKey}`
+    return this.http.get(apiUrl);
+  }
+
 }
