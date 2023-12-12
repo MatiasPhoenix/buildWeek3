@@ -9,10 +9,12 @@ import { Router } from '@angular/router';
   styleUrl: './dashboard.component.scss'
 })
 export class DashboardComponent {
-  movies!   : Imovie[];
-  movie     : string = '';
-  year      : string = '';
-  page      : number = 1;
+  movies!   : Imovie[]
+  movie     : string    = ''
+  page      : number    = 1
+  year      : string    = ''
+  type      : string    = ''
+  moviesL   : boolean   = false
 
   constructor(
     private svc     : DashboardService,
@@ -20,11 +22,12 @@ export class DashboardComponent {
     ) {}
 
   getMovies(){
-    return this.svc.getMovies(this.movie, this.page, this.year).subscribe(data => {
-      this.movies = []
-      console.log(data)
-      this.movies = data.Search;
+    this.page = 1
+    return this.svc.getMovies(this.movie, this.page, this.year, this.type).subscribe(data => {
+      this.movies   = [];
+      this.movies   = data.Search;
       this.addImageUrl()
+      this.checkMoviesLength()
     })
   }
 
@@ -38,22 +41,32 @@ export class DashboardComponent {
 
   nextPage(){
     this.page++;
-    return this.svc.getMovies(this.movie, this.page).subscribe(data => {
-      this.movies = [];
-      this.movies = data.Search;
+    this.moviesL = false
+    return this.svc.getMovies(this.movie, this.page, this.year, this.type).subscribe(data => {
+      this.movies   = [];
+      this.movies   = data.Search;
+      this.addImageUrl()
+      this.checkMoviesLength();
     })
   }
 
   previousPage() {
     this.page--;
-    return this.svc.getMovies(this.movie, this.page).subscribe(data => {
-      this.movies = [];
-      this.movies = data.Search;
+    return this.svc.getMovies(this.movie, this.page, this.year, this.type).subscribe(data => {
+      this.movies   = [];
+      this.movies   = data.Search;
+      this.checkMoviesLength();
     })
   }
 
-  test2(){
-    return this.svc.getMovie(this.movie).subscribe(data => console.log(data))
+  checkMoviesLength() {
+    if (this.movies.length >= 10) {
+      this.moviesL = true;
+    } else {
+      this.moviesL = false;
+    }
   }
-
+  // getSingleMovie(){
+  //   return this.svc.getMovie(this.movie).subscribe(data => console.log(data))
+  // }
 }
