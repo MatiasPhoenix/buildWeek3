@@ -1,0 +1,22 @@
+
+
+.background{
+  background-image: url(../../../assets/background-2Amadre.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-trasparent{
+  background-color: rgba(0, 0, 0, 0.874);
+
+}
+.box-auth{
+  max-width: 350px;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-radius: 50px;
+  border: 1px solid rgb(255, 208, 0);
+}
+.txt-shadow{
+  text-shadow: 0px 0px 10px #fff;
+}
