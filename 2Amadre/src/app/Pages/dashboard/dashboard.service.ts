@@ -17,8 +17,8 @@ export class DashboardService {
     return this.http.get(apiUrl);
   }
 
-  getMovies(movie: string): Observable<any> {
-    const apiUrl=`http://www.omdbapi.com/?s=${movie}&apikey=${this.apiKey}`
+  getMovies(movie: string, page: number, year?: string,):Observable<any> {
+    const apiUrl=`http://www.omdbapi.com/?s=${movie}&page=${page}&y=${year}&apikey=${this.apiKey}`
     return this.http.get(apiUrl);
   }
 

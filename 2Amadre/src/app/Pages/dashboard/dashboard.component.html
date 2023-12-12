@@ -1,13 +1,10 @@
 <form action="" ngModule class="ms-5">
-  <input [(ngModel)]="movie" name="movie" type="text" placeholder="Search for a movie title..">
-  <input type="text">
+  <input [(ngModel)]="movie" name="movie" type="text" placeholder="*Search for a movie title..">
+  <input [(ngModel)]="year" name="year" type="text" placeholder="Choose a release year..">
   <select name="" id="">
-    <option selected value="">Genre</option>
-    <option selected value="">Fantasy</option>
-    <option selected value="">Horror</option>
-    <option selected value="">Sci-Fi</option>
-    <option selected value="">Adventure</option>
-    <option selected value="">Action</option>
+    <option selected value="">Movies and series</option>
+    <option value="">Movies</option>
+    <option value="">TV Series</option>
   </select>
   <button (click)="getMovies()">Search</button>
 </form>
@@ -23,3 +20,5 @@
     </div>
   </div>
 </div>
+<button *ngIf="page > 1" (click)="previousPage()" class="btn btn-primary">Previous page</button>
+<button *ngIf="movies"   (click)="nextPage()"     class="btn btn-primary">Next page</button>
