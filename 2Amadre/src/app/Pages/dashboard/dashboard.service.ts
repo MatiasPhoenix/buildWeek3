@@ -1,6 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Imovie } from './models/imovie';
+import { Imoviedetails } from './models/imoviedetails';
 
 @Injectable({
   providedIn: 'root'
@@ -18,6 +20,11 @@ export class DashboardService {
   getMovies(movie: string): Observable<any> {
     const apiUrl=`http://www.omdbapi.com/?s=${movie}&apikey=${this.apiKey}`
     return this.http.get(apiUrl);
+  }
+
+  getById(id: string): Observable<Imoviedetails> {
+    const apiUrl = `http://www.omdbapi.com/?i=${id}&apikey=${this.apiKey}`
+    return this.http.get<Imoviedetails>(apiUrl);
   }
 
 }

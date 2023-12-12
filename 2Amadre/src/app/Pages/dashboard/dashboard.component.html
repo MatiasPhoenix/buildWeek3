@@ -1,18 +1,25 @@
-<form action="" ngModule>
-  <input [(ngModel)]="movie" name="movie" type="text">
-  <button (click)="test()">Test</button>
+<form action="" ngModule class="ms-5">
+  <input [(ngModel)]="movie" name="movie" type="text" placeholder="Search for a movie title..">
+  <input type="text">
+  <select name="" id="">
+    <option selected value="">Genre</option>
+    <option selected value="">Fantasy</option>
+    <option selected value="">Horror</option>
+    <option selected value="">Sci-Fi</option>
+    <option selected value="">Adventure</option>
+    <option selected value="">Action</option>
+  </select>
+  <button (click)="getMovies()">Search</button>
 </form>
 <div class="row">
-  <div *ngFor="let movie of movies[0]" class="col-md-4">
+  <div *ngFor="let movie of movies" class="col-md-4 my-3 ps-5">
     <div class="card" style="width: 18rem;">
       <img src="{{movie.Poster}}" class="card-img-top" alt="...">
       <div class="card-body text-center">
         <h5 class="card-title">{{movie.Title}}</h5>
         <p class="card-text">{{movie.Year}}</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <a [routerLink]="['/dashboard/title', movie.imdbID]" class="btn btn-primary">Movie info</a>
       </div>
     </div>
   </div>
 </div>
-
-{{movies | json}}
