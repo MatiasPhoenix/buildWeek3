@@ -11,6 +11,12 @@
       "password": "$2a$10$pmQRwG1KuP80bxfbqmvotuqelW6TqvbjeBgq3XvB9nnCyF7DOYEdu",
       "nome": "mario",
       "id": 2
+    },
+    {
+      "email": "mario@rsi.it",
+      "password": "$2a$10$NQmI7WeI9Ifek9jE75tT2.esiDcRf0UfNAsqhhHPx9.m.x1bWxtfm",
+      "nome": "Mario",
+      "id": 3
     }
   ]
 }

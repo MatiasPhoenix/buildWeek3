@@ -6,7 +6,7 @@ import { iLogin } from '../Models/login';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrl: './login.component.scss'
+  styleUrl: './login.component.scss',
 })
 export class LoginComponent {
   errorMessage!: boolean;
