@@ -9,19 +9,12 @@
         <input type="password" [(ngModel)]="loginData.password"
         name="password" class="form-control mt-1" placeholder="Password">
         <button (click)="saveLogin()" class="btn btn-warning mt-3">Login</button>
+        <div *ngIf="errorMessage" class="bg-danger mt-3 rounded rounded-3 px-2 py-2 text-light">
+         Credenziali Non Valide
+        </div>
        </form>
-       <div *ngIf="errorMessage" class="bg-danger mt-3 rounded rounded-3 py-2">
-        Credenziali Non Valide
-       </div>
     </div>
   </div>
-<!-- ------------------------------------- -->
-
-
-
-
-
-<!------------------------------------------  -->
 </div>
 
 
