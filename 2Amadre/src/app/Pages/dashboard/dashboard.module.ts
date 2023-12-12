@@ -3,24 +3,19 @@ import { CommonModule } from '@angular/common';
 
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
-import { PreferitiComponent } from './preferiti/preferiti.component';
-import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { HeaderComponent } from './header/header.component';
+import { TitleComponent } from './title/title.component';
 
 
 @NgModule({
   declarations: [
     DashboardComponent,
-    PreferitiComponent,
-    HeaderComponent
+    TitleComponent
   ],
   imports: [
     CommonModule,
     DashboardRoutingModule,
-    HttpClientModule,
-    FormsModule,
-
+    FormsModule
   ]
 })
 export class DashboardModule { }
