@@ -1,1 +1,26 @@
-<p>dashboard works!</p>
+<form action="" ngModule class="ms-5">
+  <input [(ngModel)]="movie" name="movie" type="text" placeholder="*Search for a movie title..">
+  <input [(ngModel)]="year" name="year" type="text" placeholder="Choose a release year..">
+  <select [(ngModel)]="type" name="type">
+    <option selected value="">Movies and series</option>
+    <option value="movie">Movies</option>
+    <option value="series">TV Series</option>
+  </select>
+  <button (click)="getMovies()">Search</button>
+</form>
+<div class="row">
+  <div *ngFor="let movie of movies" class="col-md-4 my-3 ps-5">
+    <div class="card" style="width: 18rem;">
+      <img src="{{movie.Poster}}" class="card-img-top" alt="...">
+      <div class="card-body text-center">
+        <h5 class = "card-title">{{movie.Title}}</h5>
+        <p  class = "card-text">{{movie.Year}}</p>
+        <a [routerLink]="['/dashboard/title', movie.imdbID]" class="btn btn-primary">Movie info</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="movies">
+  <button *ngIf="page > 1" (click)="previousPage()" class="btn btn-primary">Previous page</button>
+  <button *ngIf="moviesL"  (click)="nextPage()"     class="btn btn-primary">Next page</button>
+</div>
