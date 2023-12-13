@@ -13,7 +13,10 @@
     <div class="card" style="width: 18rem;">
       <img src="{{movie.Poster}}" class="card-img-top" alt="...">
       <div class="card-body text-center">
-        <h5 class = "card-title">{{movie.Title}}</h5>
+        <h5 class = "card-title">{{movie.Title}}
+          <img *ngIf="!isFavorite[movie.imdbID]"  (click)="addToFavorites(movie)"   src="../../../assets/star.svg"      alt="star-icon">
+          <img *ngIf="isFavorite[movie.imdbID]"   (click)="removeFromFavorites()"   src="../../../assets/star-fill.svg" alt="star-icon-filled">
+        </h5>
         <p  class = "card-text">{{movie.Year}}</p>
         <a [routerLink]="['/dashboard/title', movie.imdbID]" class="btn btn-primary">Movie info</a>
       </div>

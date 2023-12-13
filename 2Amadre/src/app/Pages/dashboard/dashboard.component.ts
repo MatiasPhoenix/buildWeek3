@@ -1,7 +1,11 @@
+import { Observable } from 'rxjs';
 import { Component } from '@angular/core';
 import { DashboardService } from './dashboard.service';
 import { Imovie } from './models/imovie';
 import { Router } from '@angular/router';
+import { AuthService } from '../auth/auth.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { iUser } from '../auth/Models/i-user';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,16 +13,26 @@ import { Router } from '@angular/router';
   styleUrl: './dashboard.component.scss'
 })
 export class DashboardComponent {
-  movies!   : Imovie[]
-  movie     : string    = ''
-  page      : number    = 1
-  year      : string    = ''
-  type      : string    = ''
-  moviesL   : boolean   = false
+  movies!       : Imovie[]
+  currentUser!  : iUser
+  movie         : string                = ''
+  page          : number                = 1
+  year          : string                = ''
+  type          : string                = ''
+  moviesL       : boolean               = false
+  isFavorite    : {[i:string]:boolean}  = {}
+
+  ngOnInit() {
+    this.authSvc.getUserById().subscribe(user => {
+      this.currentUser = user
+    })
+  }
 
   constructor(
     private svc     : DashboardService,
-    private router  : Router
+    private router  : Router,
+    private authSvc : AuthService,
+    private http    : HttpClient
     ) {}
 
   getMovies(){
@@ -69,4 +83,29 @@ export class DashboardComponent {
   // getSingleMovie(){
   //   return this.svc.getMovie(this.movie).subscribe(data => console.log(data))
   // }
+
+  addToFavorites(movie: Imovie) {
+    if (this.currentUser) {
+      if (!this.currentUser.favorites) {
+        this.currentUser.favorites = [];
+      }
+      const isAlreadyFavorite = this.currentUser.favorites.some(fav => {
+        fav.imdbID === movie.imdbID
+      });
+
+      if (!isAlreadyFavorite) {
+        this.currentUser.favorites.push(movie);
+        this.authSvc.updateFavorites(this.currentUser).subscribe(res => {
+          console.log(res);
+        });
+
+        this.isFavorite[movie.imdbID] = true
+      }
+    }
+  }
+
+
+  removeFromFavorites() {
+
+  }
 }
