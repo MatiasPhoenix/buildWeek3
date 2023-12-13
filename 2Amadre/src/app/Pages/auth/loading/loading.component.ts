@@ -12,11 +12,11 @@ export class LoadingComponent {
     private router:Router,
     ){}
 
-    ngOnInit(){
+      ngOnInit(){
       this.cambioPag();
     }
 
-    cambioPag() {
+  cambioPag() {
       setTimeout(() => {
         this.router.navigate(['dashboard']);
       }, 4000);

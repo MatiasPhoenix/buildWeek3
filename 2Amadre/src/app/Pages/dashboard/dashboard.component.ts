@@ -47,6 +47,7 @@ export class DashboardComponent {
       this.movies   = data.Search;
       this.addImageUrl()
       this.checkMoviesLength();
+      this.scrollToTop();
     })
   }
 
@@ -56,6 +57,7 @@ export class DashboardComponent {
       this.movies   = [];
       this.movies   = data.Search;
       this.checkMoviesLength();
+      this.scrollToTop();
     })
   }
 
@@ -65,6 +67,10 @@ export class DashboardComponent {
     } else {
       this.moviesL = false;
     }
+  }
+
+  scrollToTop() {
+    window.scrollTo(0, 0);
   }
   // getSingleMovie(){
   //   return this.svc.getMovie(this.movie).subscribe(data => console.log(data))
