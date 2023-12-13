@@ -12,7 +12,6 @@ export class LoadingComponent {
     private router:Router
     ){}
 
-
     ngOnInit(){
       this.cambioPag();
     }
