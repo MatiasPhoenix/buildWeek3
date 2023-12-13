@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   styleUrl: './loading.component.scss'
 })
 export class LoadingComponent {
+  showContainer: boolean = false;
 
   constructor(
     private router:Router,
@@ -14,12 +15,15 @@ export class LoadingComponent {
 
       ngOnInit(){
       this.cambioPag();
+      setTimeout(() => {
+        this.showContainer = true;
+      }, 1570);
     }
 
   cambioPag() {
       setTimeout(() => {
         this.router.navigate(['dashboard']);
-      }, 5000);
+      }, 6000);
     }
 
 }
