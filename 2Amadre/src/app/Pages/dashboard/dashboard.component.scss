@@ -9,21 +9,42 @@ option{
 }
 
 .card{
-    width: 300px;
+    width: 220px;
+    height: 470px;
     box-shadow: 1px 1px 5px black;
     border: 1px solid black;
 }
 
 .card img{
-    height: 350px;
+    height: 260px;
     box-shadow: 1px 1px 5px black;
 }
 
 .card-body{
-    height: 180px;
+    height: 200px;
+    background: linear-gradient(to bottom, #000000, #080808, #101010, #151515, #1a1a1a);
+    border-top: 1px solid rgba(128, 128, 128, 0.286);
+}
+
+.card-title{
+    color:rgb(213, 213, 213);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    height: 90px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card-text{
+    border-top: 1px solid rgba(128, 128, 128, 0.433);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.433);
+    color:rgb(213, 213, 213);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
 .contButtons{
-    margin-left: -15px;
+    margin-right: -15px;
 }
 
