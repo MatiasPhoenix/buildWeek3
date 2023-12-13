@@ -19,7 +19,7 @@ export class LoadingComponent {
   cambioPag() {
       setTimeout(() => {
         this.router.navigate(['dashboard']);
-      }, 4000);
+      }, 5000);
     }
 
 }

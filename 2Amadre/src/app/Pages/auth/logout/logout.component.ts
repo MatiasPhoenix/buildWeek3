@@ -18,7 +18,7 @@ export class LogoutComponent {
     cambioPag() {
       setTimeout(() => {
         this.router.navigate(['auth']);
-      }, 4000);
+      }, 6000);
     }
 
 }
