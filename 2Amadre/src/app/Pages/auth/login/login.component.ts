@@ -25,7 +25,7 @@ export class LoginComponent {
     this.authSvc.login(this.loginData)
     .subscribe({
       next:data => {
-        this.router.navigate(['/dashboard']);
+        this.router.navigate(['auth/loading']);
     },
     error: error => {
       console.error('Errore durante il login:', error);
