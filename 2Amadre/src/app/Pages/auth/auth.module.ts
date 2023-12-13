@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { LoadingComponent } from './loading/loading.component';
+import { LogoutComponent } from './logout/logout.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { LoadingComponent } from './loading/loading.component';
     AuthComponent,
     LoginComponent,
     RegisterComponent,
-    LoadingComponent
+    LoadingComponent,
+    LogoutComponent
   ],
   imports: [
     CommonModule,
