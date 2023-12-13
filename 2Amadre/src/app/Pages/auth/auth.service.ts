@@ -95,8 +95,8 @@ export class AuthService {
     const url = `${this.userUrl}/${accessData.user.id}`;
     return this.http.put<iUser>(url, user)
       .pipe(tap(updatedUser => {
-        this.authSubject.next({ ...accessData, user: updatedUser });
-        localStorage.setItem('accessData', JSON.stringify({ ...accessData, user: updatedUser }));
+        this.authSubject.next({...accessData, user: updatedUser });
+        localStorage.setItem('accessData', JSON.stringify({...accessData, user: updatedUser }));
       }));
   }
 }

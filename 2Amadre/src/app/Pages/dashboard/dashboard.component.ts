@@ -26,6 +26,7 @@ export class DashboardComponent {
     this.authSvc.getUserById().subscribe(user => {
       this.currentUser = user
     })
+    this.loadFavorites();
   }
 
   constructor(
@@ -83,6 +84,15 @@ export class DashboardComponent {
   // getSingleMovie(){
   //   return this.svc.getMovie(this.movie).subscribe(data => console.log(data))
   // }
+
+  loadFavorites() {
+    if(this.currentUser && this.currentUser.favorites) {
+      this.currentUser.favorites.forEach(fav => {
+        this.isFavorite[fav.imdbID] = true;
+      })
+    } else
+    return;
+  }
 
   addToFavorites(movie: Imovie) {
     if (this.currentUser) {
