@@ -105,7 +105,26 @@ export class DashboardComponent {
   }
 
 
-  removeFromFavorites() {
+  removeFromFavorites(movie:Imovie) {
+    if (this.currentUser) {
+      if (!this.currentUser.favorites) {
+        this.currentUser.favorites = [];
+      }
+      const isAlreadyFavorite = this.currentUser.favorites.some(fav => {
+        fav.imdbID === movie.imdbID
+      });
 
+      if (!isAlreadyFavorite) {
+       let x = this.currentUser.favorites.indexOf(movie);
+
+       this.currentUser.favorites.splice(x,1);
+
+        this.authSvc.updateFavorites(this.currentUser).subscribe(res => {
+          console.log(res);
+        });
+
+        this.isFavorite[movie.imdbID] = false
+      }
+    }
   }
 }

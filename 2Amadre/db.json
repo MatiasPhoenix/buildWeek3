@@ -176,6 +176,77 @@
         }
       ],
       "id": 8
+    },
+    {
+      "email": "qifejunexe@mailinator.com",
+      "password": "$2a$10$ze0XFsPWVyNObtsye2bvSehMQr20kHxMlfWRPszo3LDYtLBmipgG.",
+      "nome": "cocco",
+      "favorites": [
+        {
+          "Title": "Batman Begins",
+          "Year": "2005",
+          "imdbID": "tt0372784",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BOTY4YjI2N2MtYmFlMC00ZjcyLTg3YjEtMDQyM2ZjYzQ5YWFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Batman Begins",
+          "Year": "2005",
+          "imdbID": "tt0372784",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BOTY4YjI2N2MtYmFlMC00ZjcyLTg3YjEtMDQyM2ZjYzQ5YWFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Batman Begins",
+          "Year": "2005",
+          "imdbID": "tt0372784",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BOTY4YjI2N2MtYmFlMC00ZjcyLTg3YjEtMDQyM2ZjYzQ5YWFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Batman Begins",
+          "Year": "2005",
+          "imdbID": "tt0372784",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BOTY4YjI2N2MtYmFlMC00ZjcyLTg3YjEtMDQyM2ZjYzQ5YWFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Batman Begins",
+          "Year": "2005",
+          "imdbID": "tt0372784",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BOTY4YjI2N2MtYmFlMC00ZjcyLTg3YjEtMDQyM2ZjYzQ5YWFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Batman Begins",
+          "Year": "2005",
+          "imdbID": "tt0372784",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BOTY4YjI2N2MtYmFlMC00ZjcyLTg3YjEtMDQyM2ZjYzQ5YWFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Batman Begins",
+          "Year": "2005",
+          "imdbID": "tt0372784",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BOTY4YjI2N2MtYmFlMC00ZjcyLTg3YjEtMDQyM2ZjYzQ5YWFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Batman Begins",
+          "Year": "2005",
+          "imdbID": "tt0372784",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BOTY4YjI2N2MtYmFlMC00ZjcyLTg3YjEtMDQyM2ZjYzQ5YWFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Batman v Superman: Dawn of Justice",
+          "Year": "2016",
+          "imdbID": "tt2975590",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BYThjYzcyYzItNTVjNy00NDk0LTgwMWQtYjMwNmNlNWJhMzMyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+        }
+      ],
+      "id": 9
     }
   ]
 }
