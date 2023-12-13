@@ -26,6 +26,7 @@ export class LoginComponent {
     .subscribe({
       next:data => {
         this.router.navigate(['auth/loading']);
+
     },
     error: error => {
       console.error('Errore durante il login:', error);

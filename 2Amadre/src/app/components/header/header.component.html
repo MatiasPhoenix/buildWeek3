@@ -4,14 +4,14 @@
             <a class="navbar-brand" routerLink=""><img src="../../assets/images/logo.png" alt="logo 2Amadre" class="logo"></a>
                 <ul class="navbar-nav me-auto mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link mx-2" aria-current="page" routerLink="">Home</a>
+                        <a class="nav-link mx-2" routerLink="dashboard">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-2" routerLink="dashboard">Dashboard</a>
+                    <li *ngIf="login" class="nav-item">
+                        <a (click)="saveLogout()" class="nav-link mx-2" routerLink="auth">Logout</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-2" routerLink="auth">Login</a>
-                    </li>
+                    <li *ngIf="!login" class="nav-item">
+                      <a class="nav-link mx-2" routerLink="auth/login">Login</a>
+                  </li>
                 </ul>
         </div>
       </nav>

@@ -3,7 +3,7 @@ import { environment } from '../../../environments/environment.development';
 import { HttpClient } from '@angular/common/http';
 import { iRegister } from './Models/register';
 import { iAccessData } from './Models/i-access-data';
-import { BehaviorSubject, Observable, map, tap } from 'rxjs';
+import { BehaviorSubject, Observable, Subject, map, tap } from 'rxjs';
 import { iLogin } from './Models/login';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { Router } from '@angular/router';
