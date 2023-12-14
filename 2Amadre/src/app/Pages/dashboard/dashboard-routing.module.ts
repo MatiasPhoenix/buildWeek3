@@ -5,12 +5,12 @@ import { TitleComponent } from './title/title.component';
 
 const routes: Routes = [
   {
-    path: '',
-    component: DashboardComponent,
+    path      : '',
+    component : DashboardComponent,
   },
   {
-    path: 'title/:id',
-    component: TitleComponent,
+    path      : 'title/:id',
+    component : TitleComponent,
   }
 ];
 

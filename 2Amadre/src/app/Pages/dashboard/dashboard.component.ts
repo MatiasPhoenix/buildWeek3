@@ -4,7 +4,7 @@ import { DashboardService } from './dashboard.service';
 import { Imovie } from './models/imovie';
 import { Router } from '@angular/router';
 import { AuthService } from '../auth/auth.service';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient} from '@angular/common/http';
 import { iUser } from '../auth/Models/i-user';
 
 @Component({
@@ -23,10 +23,10 @@ export class DashboardComponent {
   isFavorite    : {[i:string]:boolean}  = {}
 
   ngOnInit() {
+    this.loadFavorites();
     this.authSvc.getUserById().subscribe(user => {
       this.currentUser = user
     })
-    this.loadFavorites();
   }
 
   constructor(
@@ -43,6 +43,7 @@ export class DashboardComponent {
       this.movies   = data.Search;
       this.addImageUrl()
       this.checkMoviesLength()
+      this.loadFavorites()
     })
   }
 
@@ -88,7 +89,9 @@ export class DashboardComponent {
   loadFavorites() {
     if(this.currentUser && this.currentUser.favorites) {
       this.currentUser.favorites.forEach(fav => {
+        console.log(fav)
         this.isFavorite[fav.imdbID] = true;
+        console.log(this.isFavorite)
       })
     } else
     return;
@@ -115,7 +118,26 @@ export class DashboardComponent {
   }
 
 
-  removeFromFavorites() {
+  removeFromFavorites(movie:Imovie) {
+    if (this.currentUser) {
+      if (!this.currentUser.favorites) {
+        this.currentUser.favorites = [];
+      }
+      const isAlreadyFavorite = this.currentUser.favorites.some(fav => {
+        fav.imdbID === movie.imdbID
+      });
 
+      if (!isAlreadyFavorite) {
+       let x = this.currentUser.favorites.indexOf(movie);
+
+       this.currentUser.favorites.splice(x,1);
+
+        this.authSvc.updateFavorites(this.currentUser).subscribe(res => {
+          console.log(res);
+        });
+
+        this.isFavorite[movie.imdbID] = false
+      }
+    }
   }
 }

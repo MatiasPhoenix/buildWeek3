@@ -20,7 +20,6 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     HttpClientModule,
     NgbModule,
-
     FormsModule
   ],
   providers: [],
