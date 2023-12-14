@@ -7,7 +7,7 @@
   background: linear-gradient(to bottom, #000000, #080808, #101010, #151515, #1a1a1a);
 }
 .card-body{
-
+  padding: 10px;
   background: linear-gradient(to bottom, #000000, #080808, #101010, #151515, #1a1a1a);
 }
 .posterImm{
@@ -129,6 +129,9 @@ p {
 h1, h2, h3, h4{
   color: #ffffff;
   font-weight: bold;
+}
+h3{
+  margin-bottom: 5px !important;
 }
 
 .mb-1-6, .my-1-6 {
