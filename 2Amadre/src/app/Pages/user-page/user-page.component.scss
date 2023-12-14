@@ -1,5 +1,4 @@
 @import "../auth/auth.component.scss";
-// @import"../dashboard/dashboard.component.scss";
 .backgroundCard{
   background: linear-gradient(to bottom, #000000, #080808, #101010, #151515, #1a1a1a);
   height:200px;
@@ -14,8 +13,11 @@
 }
 .cardFavourite{
   width: 220px;
-  height: 470px;
   box-shadow: 1px 1px 5px black;
   border: 1px solid rgb(106, 106, 106);
   transition: 0.3s;
+}
+.cardFavourite:hover{
+  transform: scale(1.1);
+  z-index: 2;
 }
