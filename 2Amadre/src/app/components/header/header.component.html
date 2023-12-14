@@ -12,6 +12,9 @@
                     <li *ngIf="!login" class="nav-item">
                       <a class="nav-link mx-2" routerLink="auth/login">Login</a>
                   </li>
+                  <li *ngIf="login" class="nav-item">
+                    <a class="nav-link mx-2" routerLink="user-page">User</a>
+                  </li>
                 </ul>
         </div>
       </nav>

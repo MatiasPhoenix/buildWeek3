@@ -83,6 +83,13 @@
       "nome": "ddddddddddddd",
       "favorites": [],
       "id": 4
+    },
+    {
+      "email": "mario@rossi.it",
+      "password": "$2a$10$D3viNAOCcvrFaVE5ki5PPe9CtKtDz9TUfmRtkO7xux40GT1WmibYa",
+      "nome": "Mario",
+      "favorites": [],
+      "id": 5
     }
   ]
 }
