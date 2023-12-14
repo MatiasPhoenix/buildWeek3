@@ -88,7 +88,176 @@
       "email": "mario@rossi.it",
       "password": "$2a$10$D3viNAOCcvrFaVE5ki5PPe9CtKtDz9TUfmRtkO7xux40GT1WmibYa",
       "nome": "Mario",
-      "favorites": [],
+      "favorites": [
+        {
+          "Title": "Amor de madre",
+          "Year": "2013",
+          "imdbID": "tt3000156",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BNzRmNmQwODItM2Y2Zi00MDFiLTk2MzAtYjNjN2MyMTk0YTRmXkEyXkFqcGdeQXVyMTA0MjU0Ng@@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Amor de madre",
+          "Year": "2013",
+          "imdbID": "tt3000156",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BNzRmNmQwODItM2Y2Zi00MDFiLTk2MzAtYjNjN2MyMTk0YTRmXkEyXkFqcGdeQXVyMTA0MjU0Ng@@._V1_SX300.jpg"
+        },
+        {
+          "Title": "La madre distratta",
+          "Type": "movie",
+          "Year": "2016",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BNTBjZTgyZjUtZjk5ZS00NDBmLWI1ZTUtNWJiMmZiMGE0NGVhXkEyXkFqcGdeQXVyMTAxOTY2NTQ@._V1_SX300.jpg",
+          "imdbID": "tt7162186"
+        },
+        {
+          "Title": "Stage Mother",
+          "Year": "2020",
+          "imdbID": "tt8364138",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BODNhYmIzMTAtZWNjYS00NzdmLTkxYzItMmViY2JhMmY3MzcyXkEyXkFqcGdeQXVyNjU2NDIxOTM@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Amor de madre",
+          "Year": "2013",
+          "imdbID": "tt3000156",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BNzRmNmQwODItM2Y2Zi00MDFiLTk2MzAtYjNjN2MyMTk0YTRmXkEyXkFqcGdeQXVyMTA0MjU0Ng@@._V1_SX300.jpg"
+        },
+        {
+          "Title": "La madre distratta",
+          "Type": "movie",
+          "Year": "2016",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BNTBjZTgyZjUtZjk5ZS00NDBmLWI1ZTUtNWJiMmZiMGE0NGVhXkEyXkFqcGdeQXVyMTAxOTY2NTQ@._V1_SX300.jpg",
+          "imdbID": "tt7162186"
+        },
+        {
+          "Title": "Stage Mother",
+          "Year": "2020",
+          "imdbID": "tt8364138",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BODNhYmIzMTAtZWNjYS00NzdmLTkxYzItMmViY2JhMmY3MzcyXkEyXkFqcGdeQXVyNjU2NDIxOTM@._V1_SX300.jpg"
+        },
+        {
+          "Title": "La Cicciolina. Godmother of Scandal",
+          "Year": "2016",
+          "imdbID": "tt6181534",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BYmEwMzdmZmYtYzM3OS00NTcxLWI3NjYtOTU5ZjliMmU1OGU2XkEyXkFqcGdeQXVyMjMzMTE2MzY@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Chicha tu madre",
+          "Year": "2006",
+          "imdbID": "tt0778641",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BMmM3ZjM3YWUtYzllZS00YmY1LWFlZmUtNTQ0MGY2ZmQ2ZGU0XkEyXkFqcGdeQXVyNTk0MzkxNDk@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Amor de madre",
+          "Year": "2013",
+          "imdbID": "tt3000156",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BNzRmNmQwODItM2Y2Zi00MDFiLTk2MzAtYjNjN2MyMTk0YTRmXkEyXkFqcGdeQXVyMTA0MjU0Ng@@._V1_SX300.jpg"
+        },
+        {
+          "Title": "La madre distratta",
+          "Type": "movie",
+          "Year": "2016",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BNTBjZTgyZjUtZjk5ZS00NDBmLWI1ZTUtNWJiMmZiMGE0NGVhXkEyXkFqcGdeQXVyMTAxOTY2NTQ@._V1_SX300.jpg",
+          "imdbID": "tt7162186"
+        },
+        {
+          "Title": "Stage Mother",
+          "Year": "2020",
+          "imdbID": "tt8364138",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BODNhYmIzMTAtZWNjYS00NzdmLTkxYzItMmViY2JhMmY3MzcyXkEyXkFqcGdeQXVyNjU2NDIxOTM@._V1_SX300.jpg"
+        },
+        {
+          "Title": "La Cicciolina. Godmother of Scandal",
+          "Year": "2016",
+          "imdbID": "tt6181534",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BYmEwMzdmZmYtYzM3OS00NTcxLWI3NjYtOTU5ZjliMmU1OGU2XkEyXkFqcGdeQXVyMjMzMTE2MzY@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Chicha tu madre",
+          "Year": "2006",
+          "imdbID": "tt0778641",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BMmM3ZjM3YWUtYzllZS00YmY1LWFlZmUtNTQ0MGY2ZmQ2ZGU0XkEyXkFqcGdeQXVyNTk0MzkxNDk@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Amor de madre",
+          "Year": "2013",
+          "imdbID": "tt3000156",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BNzRmNmQwODItM2Y2Zi00MDFiLTk2MzAtYjNjN2MyMTk0YTRmXkEyXkFqcGdeQXVyMTA0MjU0Ng@@._V1_SX300.jpg"
+        },
+        {
+          "Title": "La madre distratta",
+          "Type": "movie",
+          "Year": "2016",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BNTBjZTgyZjUtZjk5ZS00NDBmLWI1ZTUtNWJiMmZiMGE0NGVhXkEyXkFqcGdeQXVyMTAxOTY2NTQ@._V1_SX300.jpg",
+          "imdbID": "tt7162186"
+        },
+        {
+          "Title": "Amor de madre",
+          "Year": "2013",
+          "imdbID": "tt3000156",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BNzRmNmQwODItM2Y2Zi00MDFiLTk2MzAtYjNjN2MyMTk0YTRmXkEyXkFqcGdeQXVyMTA0MjU0Ng@@._V1_SX300.jpg"
+        },
+        {
+          "Title": "La madre distratta",
+          "Type": "movie",
+          "Year": "2016",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BNTBjZTgyZjUtZjk5ZS00NDBmLWI1ZTUtNWJiMmZiMGE0NGVhXkEyXkFqcGdeQXVyMTAxOTY2NTQ@._V1_SX300.jpg",
+          "imdbID": "tt7162186"
+        },
+        {
+          "Title": "Stage Mother",
+          "Year": "2020",
+          "imdbID": "tt8364138",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BODNhYmIzMTAtZWNjYS00NzdmLTkxYzItMmViY2JhMmY3MzcyXkEyXkFqcGdeQXVyNjU2NDIxOTM@._V1_SX300.jpg"
+        },
+        {
+          "Title": "La Cicciolina. Godmother of Scandal",
+          "Year": "2016",
+          "imdbID": "tt6181534",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BYmEwMzdmZmYtYzM3OS00NTcxLWI3NjYtOTU5ZjliMmU1OGU2XkEyXkFqcGdeQXVyMjMzMTE2MzY@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Chicha tu madre",
+          "Year": "2006",
+          "imdbID": "tt0778641",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BMmM3ZjM3YWUtYzllZS00YmY1LWFlZmUtNTQ0MGY2ZmQ2ZGU0XkEyXkFqcGdeQXVyNTk0MzkxNDk@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Shining Time Station",
+          "Year": "1989–1993",
+          "imdbID": "tt0098910",
+          "Type": "series",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BMGFkMzU2MzAtYjA5Yi00ODFhLWFiZGEtNmY4ZmVkOGY5YzE1XkEyXkFqcGdeQXVyNjU5MzMxNzY@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Shining Sex",
+          "Year": "1976",
+          "imdbID": "tt0232633",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BMGJmMmU2OWMtMjRlNC00NzFkLWI3YzEtZWE0NTk5M2Y0OTRmXkEyXkFqcGdeQXVyNzM0MTI2NDE@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Our Shining Days",
+          "Year": "2017",
+          "imdbID": "tt7013194",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BN2NjN2ZmYWQtM2FhZS00MjZlLWFjNzQtYjJmOGY2NDdmNTlhXkEyXkFqcGdeQXVyMjI5OTkwMTc@._V1_SX300.jpg"
+        }
+      ],
       "id": 5
     }
   ]

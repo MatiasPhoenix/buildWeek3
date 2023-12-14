@@ -1,1 +1,7 @@
 @import "../auth.component.scss";
+
+@media screen and (max-width:767px){
+    .background{
+      height: 100vh;
+    }
+}

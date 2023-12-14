@@ -24,3 +24,9 @@ h5{
     font-size: 0.8rem;
   }
 }
+
+@media screen and (max-width:425px){
+  .box-auth{
+    margin-top: 50px;
+  }
+}

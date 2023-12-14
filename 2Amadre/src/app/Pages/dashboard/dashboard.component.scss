@@ -1,3 +1,4 @@
+
 .btn{
     font-weight: bold;
     box-shadow: 1px 1px 5px black;
@@ -50,8 +51,16 @@ option{
 
 }
 
-.contButtons{
-    margin-right: -15px;
+#star-fill{
+    cursor:pointer;
 }
 
+#star-empty{
+    cursor:pointer;
+}
+@media (max-width: 1199.98px) {
+    .card {
+      width: 180px;
+    }
+  }
 
