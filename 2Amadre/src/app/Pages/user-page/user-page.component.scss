@@ -1,1 +1,9 @@
-
+@import "../auth/auth.component.scss";
+.backgroundCard{
+  background: linear-gradient(to bottom, #000000, #080808, #101010, #151515, #1a1a1a);
+  height:200px;
+}
+.backgroundAbout{
+  background-color: #f8f9fa;
+  border-radius: 20px;
+}
