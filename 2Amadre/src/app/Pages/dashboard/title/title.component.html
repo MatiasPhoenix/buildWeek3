@@ -9,11 +9,12 @@
   href="https://cdn.jsdelivr.net/npm/ti-icons@0.1.2/css/themify-icons.css"
 />
 <div class="container">
+  <h2 class="h1 mb-0 text-primary main-title">{{ movie.Title }}</h2>
   <div class="row justify-content-center">
     <div class="col-md-7 col-lg-4 mb-5 mb-lg-0 wow fadeIn">
-      <div class="card border-0 shadow">
+      <div class="card border-0 shadow mt-4">
         <img src="{{ movie.Poster }}" alt="..." />
-        <div class="card-body p-1-9 p-xl-5 row">
+        <div class="card-body p-1-9 p-xl-3 row">
           <!--INFORMAZIONI SOTTO LA IMMAGINE DEL FILM-->
           <div class="col-6">
             <div class="mb-4">
@@ -23,10 +24,6 @@
             <div>
               <h4 class="">Durata</h4>
               <p class="pb-2">{{ movie.Runtime }}</p>
-            </div>
-            <div>
-              <h5 class="">Generi</h5>
-              <p class="">{{ movie.Genre }}</p>
             </div>
           </div>
           <div class="col-6">
@@ -54,12 +51,11 @@
     <div class="col-lg-8">
       <div class="ps-lg-1-6 ps-xl-5">
         <div class="mb-5 wow fadeIn">
-          <div class="text-start mb-1-6 wow fadeIn">
-            <h2 class="h1 mb-0 text-primary main-title">{{ movie.Title }}</h2>
-          </div>
-          <p class="plot-color">
+          <div class="text-start mb-1-6 wow fadeIn"></div>
+          <p class="plot-color py-3 px-4">
             {{ movie.Plot }}
           </p>
+          <p class="text-light fw-bold">{{ movie.Genre }}</p>
         </div>
         <div class="mb-5 wow fadeIn">
           <div class="text-start mb-1-6 wow fadeIn">
