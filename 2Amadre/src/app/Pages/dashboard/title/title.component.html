@@ -55,9 +55,9 @@
       <div class="ps-lg-1-6 ps-xl-5">
         <div class="mb-5 wow fadeIn">
           <div class="text-start mb-1-6 wow fadeIn">
-            <h2 class="h1 mb-0 text-primary">{{ movie.Title }}</h2>
+            <h2 class="h1 mb-0 text-primary main-title">{{ movie.Title }}</h2>
           </div>
-          <p>
+          <p class="plot-color">
             {{ movie.Plot }}
           </p>
         </div>
@@ -65,46 +65,56 @@
           <div class="text-start mb-1-6 wow fadeIn">
             <h2 class="mb-0 text-primary text-center">Informations</h2>
           </div>
-          <div class="row mt-n4">
-            <div class="col-sm-6 col-xl-4 mt-4">
-              <div class="card text-center border-0 rounded-3">
-                <div class="card-body">
+
+          <!--ATTORI E REGISTI-->
+
+          <div class="row mt-n4 d-block">
+            <div class="mt-4">
+              <div class="card border-0 rounded-3">
+                <div class="card-body d-flex align-items-center">
                   <img
-                    class="icon_title pb-2"
+                    class="icon_titlee pb-2"
                     src="../../../../assets/director-chair.png"
                   />
-                  <h3 class="h5 mb-3">Director</h3>
-                  <p class="mb-0">
-                    {{ movie.Director }}
-                  </p>
+                  <div>
+                    <h3 class="h5 mb-3">Director</h3>
+                    <p class="mb-0">
+                      {{ movie.Director }}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-xl-4 mt-4">
-              <div class="card text-center border-0 rounded-3">
-                <div class="card-body">
+            <div class="mt-4">
+              <div class="card border-0 rounded-3">
+                <div class="card-body d-flex align-items-center">
                   <img
                     class="icon_title pb-2"
                     src="../../../../assets/actor.png"
                   />
-                  <h3 class="h5 mb-3">Actors</h3>
-                  <p class="mb-0">
-                    {{ movie.Actors }}
-                  </p>
+
+                  <div>
+                    <h3 class="h5 mb-3">Actors</h3>
+                    <p class="mb-0">
+                      {{ movie.Actors }}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-xl-4 mt-4">
-              <div class="card text-center border-0 rounded-3">
-                <div class="card-body">
+            <div class="mt-4">
+              <div class="card border-0 rounded-3">
+                <div class="card-body d-flex align-items-center">
                   <img
                     class="icon_title pb-2"
                     src="../../../../assets/scenario.png"
                   />
-                  <h3 class="h5 mb-3">Writers</h3>
-                  <p class="mb-0">
-                    {{ movie.Writer }}
-                  </p>
+                  <div>
+                    <h3 class="h5 mb-3">Writers</h3>
+                    <p class="mb-0">
+                      {{ movie.Writer }}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
