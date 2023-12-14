@@ -92,11 +92,15 @@ export class AuthService {
       return new Observable();
     }
 
+    const favoritesUpdate = {
+      favorites: user.favorites
+    }
+
     const url = `${this.userUrl}/${accessData.user.id}`;
-    return this.http.put<iUser>(url, user)
+    return this.http.patch<iUser>(url, favoritesUpdate)
       .pipe(tap(updatedUser => {
-        this.authSubject.next({...accessData, user: updatedUser });
-        localStorage.setItem('accessData', JSON.stringify({...accessData, user: updatedUser }));
+        this.authSubject.next({ ...accessData, user: updatedUser });
+        localStorage.setItem('accessData', JSON.stringify({ ...accessData, user: updatedUser }));
       }));
   }
 }

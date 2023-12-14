@@ -38,7 +38,7 @@ export class DashboardComponent {
 
   getMovies(){
     this.page = 1
-    return this.svc.getMovies(this.movie, this.page, this.year, this.type).subscribe(data => {
+    this.svc.getMovies(this.movie, this.page, this.year, this.type).subscribe(data => {
       this.movies   = [];
       this.movies   = data.Search;
       this.addImageUrl()

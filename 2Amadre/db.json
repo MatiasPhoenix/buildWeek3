@@ -8,9 +8,30 @@
     },
     {
       "email": "test@test.it",
-      "password": "$2a$10$Whl5RW0E0iTcSd/xDQH/nOBS0GpaZ4I/MHjs20KJoPCoEDschNizO",
+      "password": "$2a$10$19nSMvtWAkio3fR3IK86pO4T.CwrykpKvhUf/Q2J6cjsVNiVosGca",
       "nome": "test",
       "favorites": [
+        {
+          "Title": "Batman Begins",
+          "Year": "2005",
+          "imdbID": "tt0372784",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BOTY4YjI2N2MtYmFlMC00ZjcyLTg3YjEtMDQyM2ZjYzQ5YWFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Batman Ninja",
+          "Year": "2018",
+          "imdbID": "tt7451284",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BMjFlMDc2NGMtYjkyMS00MTlhLTgxNWItMmYxZjc5NzVhMGE0XkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_SX300.jpg"
+        },
+        {
+          "Title": "Scooby-Doo & Batman: The Brave and the Bold",
+          "Year": "2018",
+          "imdbID": "tt7578566",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BNzg1NGY1YjItMDc5MC00NDkwLTgxZTItNjFlYWM5YzI1ZGNiXkEyXkFqcGdeQXVyMzc1MzYxMjc@._V1_SX300.jpg"
+        },
         {
           "Title": "Batman Begins",
           "Year": "2005",
@@ -26,32 +47,11 @@
           "Poster": "https://m.media-amazon.com/images/M/MV5BM2MyNTAwZGEtNTAxNC00ODVjLTgzZjUtYmU0YjAzNmQyZDEwXkEyXkFqcGdeQXVyNDc2NTg3NzA@._V1_SX300.jpg"
         },
         {
-          "Title": "Batman v Superman: Dawn of Justice",
-          "Year": "2016",
-          "imdbID": "tt2975590",
+          "Title": "Batman Begins",
+          "Year": "2005",
+          "imdbID": "tt0372784",
           "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BYThjYzcyYzItNTVjNy00NDk0LTgwMWQtYjMwNmNlNWJhMzMyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
-        },
-        {
-          "Title": "Batman",
-          "Year": "1989",
-          "imdbID": "tt0096895",
-          "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BZWQ0OTQ3ODctMmE0MS00ODc2LTg0ZTEtZWIwNTUxOGExZTQ4XkEyXkFqcGdeQXVyNzAwMjU2MTY@._V1_SX300.jpg"
-        },
-        {
-          "Title": "Batman Returns",
-          "Year": "1992",
-          "imdbID": "tt0103776",
-          "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BOGZmYzVkMmItM2NiOS00MDI3LWI4ZWQtMTg0YWZkODRkMmViXkEyXkFqcGdeQXVyODY0NzcxNw@@._V1_SX300.jpg"
-        },
-        {
-          "Title": "Batman & Robin",
-          "Year": "1997",
-          "imdbID": "tt0118688",
-          "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BMGQ5YTM1NmMtYmIxYy00N2VmLWJhZTYtN2EwYTY3MWFhOTczXkEyXkFqcGdeQXVyNTA2NTI0MTY@._V1_SX300.jpg"
+          "Poster": "https://m.media-amazon.com/images/M/MV5BOTY4YjI2N2MtYmFlMC00ZjcyLTg3YjEtMDQyM2ZjYzQ5YWFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
         },
         {
           "Title": "Batman Begins",
@@ -72,59 +72,9 @@
     },
     {
       "email": "test2@test.it",
-      "password": "$2a$10$6skojoGAeZrIpmzrMuX/bux3T/oKLon73BfLwV0BnAMKSmTmz0oGy",
+      "password": "$2a$10$en269.p.fjZLNXkFsAbv7e4bWeroIubsSdt5MHZYqER/lEb8utzDe",
       "nome": "test2",
-      "favorites": [
-        {
-          "Title": "Batman Begins",
-          "Year": "2005",
-          "imdbID": "tt0372784",
-          "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BOTY4YjI2N2MtYmFlMC00ZjcyLTg3YjEtMDQyM2ZjYzQ5YWFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
-        },
-        {
-          "Title": "Batman v Superman: Dawn of Justice",
-          "Year": "2016",
-          "imdbID": "tt2975590",
-          "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BYThjYzcyYzItNTVjNy00NDk0LTgwMWQtYjMwNmNlNWJhMzMyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
-        },
-        {
-          "Title": "Batman Returns",
-          "Year": "1992",
-          "imdbID": "tt0103776",
-          "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BOGZmYzVkMmItM2NiOS00MDI3LWI4ZWQtMTg0YWZkODRkMmViXkEyXkFqcGdeQXVyODY0NzcxNw@@._V1_SX300.jpg"
-        },
-        {
-          "Title": "Batman: Assault on Arkham",
-          "Year": "2014",
-          "imdbID": "tt3139086",
-          "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BZDU1ZGRiY2YtYmZjMi00ZDQwLWJjMWMtNzUwNDMwYjQ4ZTVhXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"
-        },
-        {
-          "Title": "The Batman",
-          "Year": "2022",
-          "imdbID": "tt1877830",
-          "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BM2MyNTAwZGEtNTAxNC00ODVjLTgzZjUtYmU0YjAzNmQyZDEwXkEyXkFqcGdeQXVyNDc2NTg3NzA@._V1_SX300.jpg"
-        },
-        {
-          "Title": "Batman & Robin",
-          "Year": "1997",
-          "imdbID": "tt0118688",
-          "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BMGQ5YTM1NmMtYmIxYy00N2VmLWJhZTYtN2EwYTY3MWFhOTczXkEyXkFqcGdeQXVyNTA2NTI0MTY@._V1_SX300.jpg"
-        },
-        {
-          "Title": "Batman",
-          "Year": "1989",
-          "imdbID": "tt0096895",
-          "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BZWQ0OTQ3ODctMmE0MS00ODc2LTg0ZTEtZWIwNTUxOGExZTQ4XkEyXkFqcGdeQXVyNzAwMjU2MTY@._V1_SX300.jpg"
-        }
-      ],
+      "favorites": [],
       "id": 3
     }
   ]
