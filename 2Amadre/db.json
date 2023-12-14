@@ -17,6 +17,12 @@
       "password": "$2a$10$NQmI7WeI9Ifek9jE75tT2.esiDcRf0UfNAsqhhHPx9.m.x1bWxtfm",
       "nome": "Mario",
       "id": 3
+    },
+    {
+      "email": "fabio@msn.com",
+      "password": "$2a$10$zIJDOudQQVkjfyrMBbq/LOg8FrppR4kgo.2gR105.s8MgWbc4z0dW",
+      "nome": "fabio",
+      "id": 4
     }
   ]
 }
