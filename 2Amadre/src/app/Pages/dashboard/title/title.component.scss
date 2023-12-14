@@ -1,8 +1,13 @@
 .card{
-  border: 1px solid rgb(106, 106, 106);
+  border: 0.5px solid rgb(106, 106, 106);
+  background: linear-gradient(to bottom, #000000, #080808, #101010, #151515, #1a1a1a);
 }
 .card-body{
+
   background: linear-gradient(to bottom, #000000, #080808, #101010, #151515, #1a1a1a);
+}
+.posterImm{
+  border-bottom: 1px solid rgb(106, 106, 106);
 }
 
 .plot-color{
@@ -110,7 +115,13 @@ a, a:active, a:focus {
 }
 
 p {
-    margin: 0 0 20px;
+  color: #ffffff;
+  margin: 0 0 20px;
+  font-weight: bold;
+}
+h1, h2, h3, h4{
+  color: #ffffff;
+  font-weight: bold;
 }
 
 .mb-1-6, .my-1-6 {
