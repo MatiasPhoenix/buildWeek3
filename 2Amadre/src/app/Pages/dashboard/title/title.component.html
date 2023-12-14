@@ -53,7 +53,7 @@
         <div class="mb-5 wow fadeIn">
           <div class="text-start mb-1-6 wow fadeIn"></div>
           <p class="plot-color py-3 px-4">
-            {{ movie.Plot }}
+            <span class="myColorText">TRAMA:</span> {{ movie.Plot }}
           </p>
           <div class="d-flex justify-content-between">
             <div class="text-light">Genere: <span class="text-light fw-bold">{{ movie.Genre }}</span></div>
@@ -172,6 +172,21 @@
           </div>
         </div>
         <!--fine-->
+      </div>
+    </div>
+    <div class="row">
+
+      <div *ngFor="let movie of movies" class="col-md-3 col-lg-2 mx-lg-3 my-3">
+        <div class="card">
+          <a [routerLink]="['/dashboard/title', movie.imdbID]"><img [src]="movie.Poster" class="card-img-top posterImage" alt="..."></a>
+          <div class="card-body text-center">
+            <h5 class="card-title">{{movie.Title}}
+
+            </h5>
+            <p class="card-text">{{movie.Year}}</p>
+            <a [routerLink]="['/dashboard/title', movie.imdbID]" class="btn btn-warning">Info</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
