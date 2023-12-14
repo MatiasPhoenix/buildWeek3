@@ -11,6 +11,8 @@ import { Imoviedetails } from '../models/imoviedetails';
 })
 export class TitleComponent {
 
+
+
   movie : Imoviedetails = {
     Title: '',
     Year: '',
@@ -50,8 +52,10 @@ export class TitleComponent {
       this.dSvc.getById(params.id).subscribe(res => {
         this.movie = res;
         console.log(this.movie)
+
       })
     })
+
   }
 
 
