@@ -7,16 +7,17 @@ import { BehaviorSubject, Observable, Subject, map, tap } from 'rxjs';
 import { iLogin } from './Models/login';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { Router } from '@angular/router';
+import { iUser } from './Models/i-user';
+import { Imovie } from '../dashboard/models/imovie';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
-  jwtHelper:JwtHelperService = new JwtHelperService()
-  authSubject = new BehaviorSubject<iAccessData|null>(null);
-
-  user$ = this.authSubject.asObservable();//contiene i dati dell'utente loggato oppure null
+  jwtHelper:JwtHelperService  = new JwtHelperService()
+  authSubject                 = new BehaviorSubject<iAccessData|null>(null);
+  user$       = this.authSubject.asObservable();//contiene i dati dell'utente loggato oppure null
   isLoggedIn$ = this.user$.pipe(map(user => !!user))//fornisce true o false in base allo stato di autenticaziuone dell'utente
   //isLoggedIn$ = this.user$.pipe(map(user => Boolean(user)))
 
@@ -29,9 +30,9 @@ export class AuthService {
 
   }
 
-  registerUrl:string = environment.apiUrl + '/register';
-  loginUrl:string = environment.apiUrl + '/login'
-
+  registerUrl :string = environment.apiUrl + '/register';
+  loginUrl    :string = environment.apiUrl + '/login'
+  userUrl     :string = environment.apiUrl + '/users'
 
 
   signUp(data:iRegister):Observable<iAccessData>{
@@ -75,5 +76,32 @@ export class AuthService {
       this.authSubject.next(accessData)
   }
 
+  getUserById(): Observable<any> {
+    const accessData: iAccessData | null = this.authSubject.getValue();
+    if (!accessData) {
+      return new Observable();
+    }
+    return this.http.get<iUser[]>(this.userUrl).pipe(
+      map(users => users.find(user => user.id === accessData.user.id))
+    );
+  }
 
+  updateFavorites(user: iUser): Observable<iUser> {
+    const accessData: iAccessData | null = this.authSubject.getValue();
+    if (!accessData) {
+      return new Observable();
+    }
+
+    const favoritesUpdate = {
+      favorites: user.favorites
+    }
+
+    const url = `${this.userUrl}/${accessData.user.id}`;
+    return this.http.patch<iUser>(url, favoritesUpdate)
+      .pipe(tap(updatedUser => {
+        this.authSubject.next({ ...accessData, user: updatedUser });
+        localStorage.setItem('accessData', JSON.stringify({ ...accessData, user: updatedUser }));
+      }));
+  }
 }
+

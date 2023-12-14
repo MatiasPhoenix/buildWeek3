@@ -7,11 +7,15 @@
                         <a class="nav-link mx-2" routerLink="dashboard">Home</a>
                     </li>
                     <li *ngIf="login" class="nav-item">
+                      <a class="nav-link mx-2" routerLink="user-page">User</a>
+                    </li>
+                    <li *ngIf="login" class="nav-item">
                         <a (click)="saveLogout()" class="nav-link mx-2" routerLink="auth">Logout</a>
                     </li>
                     <li *ngIf="!login" class="nav-item">
                       <a class="nav-link mx-2" routerLink="auth/login">Login</a>
                   </li>
+
                 </ul>
         </div>
       </nav>

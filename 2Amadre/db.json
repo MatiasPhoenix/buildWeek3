@@ -7,22 +7,89 @@
       "id": 1
     },
     {
-      "email": "mario@rossi.it",
-      "password": "$2a$10$pmQRwG1KuP80bxfbqmvotuqelW6TqvbjeBgq3XvB9nnCyF7DOYEdu",
-      "nome": "mario",
+      "email": "test@test.it",
+      "password": "$2a$10$19nSMvtWAkio3fR3IK86pO4T.CwrykpKvhUf/Q2J6cjsVNiVosGca",
+      "nome": "test",
+      "favorites": [
+        {
+          "Title": "Batman Begins",
+          "Year": "2005",
+          "imdbID": "tt0372784",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BOTY4YjI2N2MtYmFlMC00ZjcyLTg3YjEtMDQyM2ZjYzQ5YWFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Batman Ninja",
+          "Year": "2018",
+          "imdbID": "tt7451284",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BMjFlMDc2NGMtYjkyMS00MTlhLTgxNWItMmYxZjc5NzVhMGE0XkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_SX300.jpg"
+        },
+        {
+          "Title": "Scooby-Doo & Batman: The Brave and the Bold",
+          "Year": "2018",
+          "imdbID": "tt7578566",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BNzg1NGY1YjItMDc5MC00NDkwLTgxZTItNjFlYWM5YzI1ZGNiXkEyXkFqcGdeQXVyMzc1MzYxMjc@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Batman Begins",
+          "Year": "2005",
+          "imdbID": "tt0372784",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BOTY4YjI2N2MtYmFlMC00ZjcyLTg3YjEtMDQyM2ZjYzQ5YWFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+        },
+        {
+          "Title": "The Batman",
+          "Year": "2022",
+          "imdbID": "tt1877830",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BM2MyNTAwZGEtNTAxNC00ODVjLTgzZjUtYmU0YjAzNmQyZDEwXkEyXkFqcGdeQXVyNDc2NTg3NzA@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Batman Begins",
+          "Year": "2005",
+          "imdbID": "tt0372784",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BOTY4YjI2N2MtYmFlMC00ZjcyLTg3YjEtMDQyM2ZjYzQ5YWFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Batman Begins",
+          "Year": "2005",
+          "imdbID": "tt0372784",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BOTY4YjI2N2MtYmFlMC00ZjcyLTg3YjEtMDQyM2ZjYzQ5YWFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+        },
+        {
+          "Title": "The Batman",
+          "Year": "2022",
+          "imdbID": "tt1877830",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BM2MyNTAwZGEtNTAxNC00ODVjLTgzZjUtYmU0YjAzNmQyZDEwXkEyXkFqcGdeQXVyNDc2NTg3NzA@._V1_SX300.jpg"
+        }
+      ],
       "id": 2
     },
     {
-      "email": "mario@rsi.it",
-      "password": "$2a$10$NQmI7WeI9Ifek9jE75tT2.esiDcRf0UfNAsqhhHPx9.m.x1bWxtfm",
-      "nome": "Mario",
+      "email": "test2@test.it",
+      "password": "$2a$10$en269.p.fjZLNXkFsAbv7e4bWeroIubsSdt5MHZYqER/lEb8utzDe",
+      "nome": "test2",
+      "favorites": [],
       "id": 3
     },
     {
-      "email": "fabio@msn.com",
-      "password": "$2a$10$zIJDOudQQVkjfyrMBbq/LOg8FrppR4kgo.2gR105.s8MgWbc4z0dW",
-      "nome": "fabio",
+      "email": "test4@test.it",
+      "password": "$2a$10$sV2uoIhVPDxEGWc.4KTpPOM88qxB6QdFRuSVpfyOsCwxFajKEH5VO",
+      "nome": "ddddddddddddd",
+      "favorites": [],
       "id": 4
+    },
+    {
+      "email": "mario@rossi.it",
+      "password": "$2a$10$D3viNAOCcvrFaVE5ki5PPe9CtKtDz9TUfmRtkO7xux40GT1WmibYa",
+      "nome": "Mario",
+      "favorites": [],
+      "id": 5
     }
   ]
 }
