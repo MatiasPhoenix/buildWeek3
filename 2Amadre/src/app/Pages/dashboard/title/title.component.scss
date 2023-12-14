@@ -1,9 +1,14 @@
 
-
+.logo2Amadre{
+  height: 30px;
+}
 .myColorText{
   color:#FFC107 !important;
 }
 
+.cardConsigli{
+  max-height: 256px !important;
+}
 .card{
   border: 0.5px solid rgb(106, 106, 106);
   background: linear-gradient(to bottom, #000000, #080808, #101010, #151515, #1a1a1a);
@@ -15,15 +20,21 @@
 .posterImm{
   border-bottom: 1px solid rgb(106, 106, 106);
 }
-.logo2Amadre{
-  height: 30px;
-}
+
 .plot-color{
   color: white;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
+.cardConsigliati:hover{
+  transform: scale(1.1);
+  z-index: 2;
+}
 
+.posterImage{
+  height: 260px;
+  box-shadow: 1px 1px 5px black;
+}
 .icon_extra{
   height: 60px;
   border: none;

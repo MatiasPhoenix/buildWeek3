@@ -10,7 +10,7 @@ import { Imoviedetails } from '../models/imoviedetails';
   styleUrl: './title.component.scss'
 })
 export class TitleComponent {
-
+  votiArr:[] = [];
   movies: Imovie[] =[
     {
     Title: "Amor de madre",
