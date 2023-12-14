@@ -1,0 +1,48 @@
+
+.background{
+  background-image: url(../../../assets/background-2Amadre.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-trasparent{
+  background-color: rgba(0, 0, 0, 0.874);
+
+}
+
+.box-auth{
+  margin-top: 10%;
+  border-radius: 50px;
+  border: 1px solid rgb(255, 208, 0);
+}
+
+.box-auth2{
+  margin-top: 10%;
+  border-radius: 50px;
+  border: 1px solid black;
+  background: linear-gradient(45deg, #000000, #222222);
+  box-shadow: 1px 1px 3px black;
+  height: 310px;
+}
+.txt-shadow{
+  text-shadow: 0px 0px 15px #fff;
+}
+
+.hero{
+  color:#FFC107;
+  font-weight:bold;
+  font-size: 1.2rem;
+  text-shadow: -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black, 1px 1px 2px black;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.btn{
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover{
+  transform: scale(1.1);
+  z-index: 2;
+}
