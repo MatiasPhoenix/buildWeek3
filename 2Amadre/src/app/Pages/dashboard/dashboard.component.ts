@@ -1,7 +1,11 @@
+import { Observable } from 'rxjs';
 import { Component } from '@angular/core';
 import { DashboardService } from './dashboard.service';
 import { Imovie } from './models/imovie';
 import { Router } from '@angular/router';
+import { AuthService } from '../auth/auth.service';
+import { HttpClient} from '@angular/common/http';
+import { iUser } from '../auth/Models/i-user';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,6 +13,15 @@ import { Router } from '@angular/router';
   styleUrl: './dashboard.component.scss'
 })
 export class DashboardComponent {
+
+  currentUser!  : iUser
+  movie         : string                = ''
+  page          : number                = 1
+  year          : string                = ''
+  type          : string                = ''
+  moviesL       : boolean               = false
+  isFavorite    : {[i:string]:boolean}  = {}
+
   movies: Imovie[] =[
     {
     Title: "Amor de madre",
@@ -47,24 +60,28 @@ export class DashboardComponent {
     }
   ]
 
-  movie     : string    = ''
-  page      : number    = 1
-  year      : string    = ''
-  type      : string    = ''
-  moviesL   : boolean   = false
+  ngOnInit() {
+    this.loadFavorites();
+    this.authSvc.getUserById().subscribe(user => {
+      this.currentUser = user
+    })
+  }
 
   constructor(
     private svc     : DashboardService,
-    private router  : Router
+    private router  : Router,
+    private authSvc : AuthService,
+    private http    : HttpClient
     ) {}
 
   getMovies(){
     this.page = 1
-    return this.svc.getMovies(this.movie, this.page, this.year, this.type).subscribe(data => {
+    this.svc.getMovies(this.movie, this.page, this.year, this.type).subscribe(data => {
       this.movies   = [];
       this.movies   = data.Search;
       this.addImageUrl()
       this.checkMoviesLength()
+      this.loadFavorites()
     })
   }
 
@@ -112,4 +129,59 @@ export class DashboardComponent {
   // getSingleMovie(){
   //   return this.svc.getMovie(this.movie).subscribe(data => console.log(data))
   // }
+
+  loadFavorites() {
+    if(this.currentUser && this.currentUser.favorites) {
+      this.currentUser.favorites.forEach(fav => {
+        console.log(fav)
+        this.isFavorite[fav.imdbID] = true;
+        console.log(this.isFavorite)
+      })
+    } else
+    return;
+  }
+
+  addToFavorites(movie: Imovie) {
+    if (this.currentUser) {
+      if (!this.currentUser.favorites) {
+        this.currentUser.favorites = [];
+      }
+      const isAlreadyFavorite = this.currentUser.favorites.some(fav => {
+        fav.imdbID === movie.imdbID
+      });
+
+      if (!isAlreadyFavorite) {
+        this.currentUser.favorites.push(movie);
+        this.authSvc.updateFavorites(this.currentUser).subscribe(res => {
+          console.log(res);
+        });
+
+        this.isFavorite[movie.imdbID] = true
+      }
+    }
+  }
+
+
+  removeFromFavorites(movie:Imovie) {
+    if (this.currentUser) {
+      if (!this.currentUser.favorites) {
+        this.currentUser.favorites = [];
+      }
+      const isAlreadyFavorite = this.currentUser.favorites.some(fav => {
+        fav.imdbID === movie.imdbID
+      });
+
+      if (!isAlreadyFavorite) {
+       let x = this.currentUser.favorites.indexOf(movie);
+
+       this.currentUser.favorites.splice(x,1);
+
+        this.authSvc.updateFavorites(this.currentUser).subscribe(res => {
+          console.log(res);
+        });
+
+        this.isFavorite[movie.imdbID] = false
+      }
+    }
+  }
 }
