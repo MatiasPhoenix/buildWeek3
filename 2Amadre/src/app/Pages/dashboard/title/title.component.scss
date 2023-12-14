@@ -1,16 +1,33 @@
 
+.plot-color{
+  color: white;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.main-title{
+  font-size: 3.8rem;
+
+  font-weight: bold;
+}
+
 .icon-rating{
   height: 40px;
 }
 
-.pippo-padding{
-  padding-left: 8%;
-}
+
 
 .icon_title{
-  height: 110px;
+  height: 80px;
   border: none;
   background-color: transparent;
+  padding-right:5%
+}
+.icon_titlee{
+  height: 83px;
+  border: none;
+  background-color: transparent;
+  padding-right:5%
 }
 
 
