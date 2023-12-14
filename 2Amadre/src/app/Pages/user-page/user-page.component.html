@@ -47,19 +47,25 @@
               <p class="mb-0"><a routerLink="favorites" class="text-muted">Mostra Tutti</a></p>
             </div>
             <div class="row g-2">
-              <!-- <div *ngFor="let movie of movies" class="col-md-3 col-lg-2 mx-lg-3 my-3">
-                <div class="card">
-                  <a [routerLink]="['/dashboard/title', movie.imdbID]"><img [src]="movie.Poster" class="card-img-top posterImage" alt="..."></a>
+              <div class="col-md-3 col-lg-2 mx-lg-3 my-3">
+                <div class="cardFavourite">
+                  <a><img [src]="" class="card-img-top posterImage" alt="..."></a>
                   <div class="card-body text-center">
-                    <h5 class="card-title">{{movie.Title}}</h5>
-                    <p class="card-text">{{movie.Year}}</p>
-                    <a [routerLink]="['/dashboard/title', movie.imdbID]" class="btn btn-warning">Info</a>
+                    <h5 class="card-title">Titolo</h5>
+                    <p class="card-text">Anno</p>
+                    <a class="btn btn-warning">Info</a>
                   </div>
                 </div>
-              </div> -->
-              <div class="col mb-2">
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/Lightbox/Original/img%20(107).webp"
-                  alt="image 1" class="w-100 rounded-3">
+              </div>
+              <div class="col-md-3 col-lg-2 mx-lg-3 my-3">
+                <div class="cardFavourite">
+                  <a><img [src]="" class="card-img-top posterImage" alt="..."></a>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Titolo</h5>
+                    <p class="card-text">Anno</p>
+                    <a class="btn btn-warning">Info</a>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="row g-2">
