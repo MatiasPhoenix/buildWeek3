@@ -2,8 +2,6 @@ import { Component } from '@angular/core';
 import { iUser } from '../auth/Models/i-user';
 import { AuthService } from '../auth/auth.service';
 import { Imovie } from '../dashboard/models/imovie';
-import { Observable } from 'rxjs';
-import { iAccessData } from '../auth/Models/i-access-data';
 
 @Component({
   selector: 'app-user-page',
@@ -12,15 +10,16 @@ import { iAccessData } from '../auth/Models/i-access-data';
 })
 export class UserPageComponent {
 
+  nome!         : string
+  email!        : string
+  username!     : string
   currentUser!  : iUser
   profilePic!   : string
-  allFavorites  : Imovie[] = []
-  allUsernames  : string[] = ['test1', 'prova2', 'tuofiglio', 'testicolo2', 'bigtest5'];
-  movieWatch   : number = this.getRandomWatchCount();
-  serieWatch   : number = this.getRandomWatchCount();
-  form :boolean = false;
-  nome!:string
-  email!:string
+  allFavorites  : Imovie[]  = []
+  movieWatch    : number    = this.getRandomWatchCount();
+  serieWatch    : number    = this.getRandomWatchCount();
+  form          : boolean   = false;
+
 
   constructor(private authSvc : AuthService) {}
 
@@ -56,14 +55,21 @@ export class UserPageComponent {
   }
   updateData(){
     if(this.nome){
-      this.currentUser.nome = this.nome
+      this.currentUser.nome     = this.nome
     }
+
     if(this.email){
-      this.currentUser.email = this.email
+      this.currentUser.email    = this.email
     }
-      this.authSvc.updateData(this.currentUser).subscribe()
-      this.modificaProfilo()
-      this.nome = ''
-      this.email = ''
+
+    if(this.username) {
+      this.currentUser.username = this.username
+    }
+
+    this.authSvc.updateData(this.currentUser).subscribe()
+    this.modificaProfilo()
+    this.nome = ''
+    this.email = ''
+    this.username = ''
   }
 }
