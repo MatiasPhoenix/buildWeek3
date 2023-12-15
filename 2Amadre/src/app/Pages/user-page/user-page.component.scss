@@ -63,9 +63,11 @@
   box-shadow: 1px 1px 5px black;
 }
 
+.infoProfilo{
+  // height: 100%;
+}
+
 .avatar-selection-popup {
-  // display: flex;
-  // flex-wrap: wrap;
   z-index: 2;
   position: fixed;
   top: 40%;
