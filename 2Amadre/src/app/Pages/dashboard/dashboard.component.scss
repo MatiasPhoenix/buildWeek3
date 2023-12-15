@@ -64,3 +64,29 @@ option{
     }
   }
 
+  @media (max-width: 767.90px) and (min-width: 456px) {
+    .card {
+    margin-left: 40px;
+    }
+
+  }
+
+  @media (max-width: 767.90px){
+    .form1 {
+        margin-top: 5px;
+    }
+
+    .form2 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .btn-block {
+        margin-top: 5px;
+    }
+
+    .divButton{
+        display:flex;
+        justify-content: center;
+    }
+  }
