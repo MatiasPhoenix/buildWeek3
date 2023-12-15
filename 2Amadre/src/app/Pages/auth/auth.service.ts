@@ -90,6 +90,25 @@ export class AuthService {
     );
   }
 
+  updateData(user: iUser): Observable<iUser> {
+    const accessData: iAccessData | null = this.authSubject.getValue();
+    if (!accessData) {
+      return new Observable();
+    }
+
+    const favoritesUpdate = {
+      email: user.email,
+      nome: user.nome
+    }
+
+    const url = `${this.userUrl}/${accessData.user.id}`;
+    return this.http.patch<iUser>(url, favoritesUpdate)
+      .pipe(tap(updatedUser => {
+        this.authSubject.next({ ...accessData, user: updatedUser });
+        localStorage.setItem('accessData', JSON.stringify({ ...accessData, user: updatedUser }));
+      }));
+  }
+
   updateFavorites(user: iUser): Observable<iUser> {
     const accessData: iAccessData | null = this.authSubject.getValue();
     if (!accessData) {
