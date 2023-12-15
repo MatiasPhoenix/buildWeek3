@@ -11,7 +11,7 @@ import { Imoviedetails } from '../models/imoviedetails';
 })
 export class TitleComponent {
 
-
+  mostraVideo:boolean = false
   // film speciali 2Amadre
   movies  : Imovie[] =[
     {
@@ -88,7 +88,58 @@ export class TitleComponent {
       Poster: "https://m.media-amazon.com/images/M/MV5BOTA5NjhiOTAtZWM0ZC00MWNhLThiMzEtZDFkOTk2OTU1ZDJkXkEyXkFqcGdeQXVyMTA4NDI1NTQx._V1_SX300.jpg"
     }
   ]
-
+  //altri consigliati random
+  movies2  : Imovie[] =[
+    {
+      "Title": "Blade Runner",
+      "Year": "1982",
+      "imdbID": "tt0083658",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNzQzMzJhZTEtOWM4NS00MTdhLTg0YjgtMjM4MDRkZjUwZDBlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Alien",
+      "Year": "1979",
+      "imdbID": "tt0078748",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BOGQzZTBjMjQtOTVmMS00NGE5LWEyYmMtOGQ1ZGZjNmRkYjFhXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Mad Max: Fury Road",
+      "Year": "2015",
+      "imdbID": "tt1392190",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BN2EwM2I5OWMtMGQyMi00Zjg1LWJkNTctZTdjYTA4OGUwZjMyXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+    },
+    {
+      "Title": "The Shining",
+      "Year": "1980",
+      "imdbID": "tt0081505",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BZWFlYmY2MGEtZjVkYS00YzU4LTg0YjQtYzY1ZGE3NTA5NGQxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+    },
+    {
+      "Title": "The Thing",
+      "Year": "1982",
+      "imdbID": "tt0084787",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNGViZWZmM2EtNGYzZi00ZDAyLTk3ODMtNzIyZTBjN2Y1NmM1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Night of the Living Dead",
+      "Year": "1968",
+      "imdbID": "tt0063350",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMzRmN2E1ZDUtZDc2ZC00ZmI3LTkwOTctNzE2ZDIzMGJiMTYzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Psycho",
+      "Year": "1960",
+      "imdbID": "tt0054215",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNTQwNDM1YzItNDAxZC00NWY2LTk0M2UtNDIwNWI5OGUyNWUxXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
+    }
+  ]
   movie : Imoviedetails = {
     Title: '',
     Year: '',
@@ -116,7 +167,7 @@ export class TitleComponent {
     Website: '',
     Response: ''
   }
-
+  videoPath= "../../../../assets/Rick Roll.mp4"
   constructor(
     private dSvc    : DashboardService,
     private router  : Router,
@@ -136,7 +187,7 @@ export class TitleComponent {
   }
 
   // esperimento funzione random film consigliati
-  combinedArray = [...this.movies, ...this.movies1];
+  combinedArray = [...this.movies, ...this.movies1, ...this.movies2];
   shuffledArray = this.shuffleAndLimitArray(this.combinedArray, 5);
 
   shuffleAndLimitArray(array: any[], limit: number): any[] {
@@ -151,5 +202,9 @@ export class TitleComponent {
   scrollToTop() {
     window.scrollTo(0, 0);
     this.shuffledArray = this.shuffleAndLimitArray(this.combinedArray, 5);
+  }
+
+  mostraTrailer(){
+    this.mostraVideo = !this.mostraVideo
   }
 }

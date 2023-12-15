@@ -8,7 +8,6 @@ import { iLogin } from './Models/login';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { Router } from '@angular/router';
 import { iUser } from './Models/i-user';
-import { Imovie } from '../dashboard/models/imovie';
 
 @Injectable({
   providedIn: 'root'
@@ -30,12 +29,16 @@ export class AuthService {
 
   }
 
-  registerUrl :string = environment.apiUrl + '/register';
-  loginUrl    :string = environment.apiUrl + '/login'
-  userUrl     :string = environment.apiUrl + '/users'
+  registerUrl     : string     = environment.apiUrl + '/register';
+  loginUrl        : string     = environment.apiUrl + '/login'
+  userUrl         : string     = environment.apiUrl + '/users'
+  allUsernames    : string[]   = ['2ASorella', 'AbortoSpontaneo', 'TitsTicoli', '2Fijo', 'MustUrbazione', 'Prena'];
 
 
   signUp(data:iRegister):Observable<iAccessData>{
+    if (data.username === '') {
+      data.username = this.assignRandomUsername();
+    }
     return this.http.post<iAccessData>(this.registerUrl, data)
   }
 
@@ -86,6 +89,26 @@ export class AuthService {
     );
   }
 
+  updateData(user: iUser): Observable<iUser> {
+    const accessData: iAccessData | null = this.authSubject.getValue();
+    if (!accessData) {
+      return new Observable();
+    }
+
+    const favoritesUpdate = {
+      email: user.email,
+      nome: user.nome,
+      username: user.username
+    }
+
+    const url = `${this.userUrl}/${accessData.user.id}`;
+    return this.http.patch<iUser>(url, favoritesUpdate)
+      .pipe(tap(updatedUser => {
+        this.authSubject.next({ ...accessData, user: updatedUser });
+        localStorage.setItem('accessData', JSON.stringify({ ...accessData, user: updatedUser }));
+      }));
+  }
+
   updateFavorites(user: iUser): Observable<iUser> {
     const accessData: iAccessData | null = this.authSubject.getValue();
     if (!accessData) {
@@ -102,6 +125,12 @@ export class AuthService {
         this.authSubject.next({ ...accessData, user: updatedUser });
         localStorage.setItem('accessData', JSON.stringify({ ...accessData, user: updatedUser }));
       }));
+  }
+
+  assignRandomUsername() {
+    const randomIndex = Math.floor(Math.random() * this.allUsernames.length);
+    const randomNum   = Math.floor(Math.random() * 9999)
+    return this.allUsernames[randomIndex] + randomNum;
   }
 }
 

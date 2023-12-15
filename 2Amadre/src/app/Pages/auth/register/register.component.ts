@@ -18,6 +18,7 @@ export class RegisterComponent {
     email: '',
     password: '',
     nome: '',
+    username: '',
     favorites: []
   }
 
