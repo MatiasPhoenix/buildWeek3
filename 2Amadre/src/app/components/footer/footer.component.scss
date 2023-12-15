@@ -3,7 +3,7 @@ footer{
     border-top: 1px solid rgba(128, 128, 128, 0.436);
 }
 
-.footer, .logos, .address {
+.footer, .address {
     width: 60%;
 }
 
@@ -17,7 +17,7 @@ p{
 
 li{
     font-size: 0.9rem;
-    color:#ffc10773;
+    color:#ffc107;
     text-shadow: 1px 1px 3px black;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     cursor:pointer;
@@ -25,11 +25,22 @@ li{
 
 li:hover{
     font-size: 0.9rem;
-    color:#ffc107;
+    color:#ffdc72;
     text-shadow: 1px 1px 3px black;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .egg{
     width: 60%;
+}
+
+.address{
+    border-top: 1px solid #ffc10738;
+    padding-top: 10px;
+}
+
+@media (max-width: 991.50px){
+    .egg{
+        display:none;
+    }
 }

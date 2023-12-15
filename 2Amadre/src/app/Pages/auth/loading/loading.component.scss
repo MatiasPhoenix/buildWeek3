@@ -1,5 +1,9 @@
 @import "../auth.component.scss";
 
+.box-auth{
+  width: 30%;
+}
+
 @media screen and (max-width:767px){
     .background{
       height: 100vh;

@@ -14,6 +14,12 @@
     <div class="card col-md-7 col-lg-4 mb-5 mb-lg-0 mt-4">
       <div class="card shadow mt-4">
         <img class="posterImm" src="{{ movie.Poster }}" alt="..." />
+        <p class="text-center pt-3 pb-0 myColorText">-2Amadre Trailer-</p>
+        <video controls poster="">
+          <source src="{{ videoPath }}" type="video/mp4">
+          Il tuo browser non supporta il tag video.
+        </video>
+
         <div class="card-body p-1-9 p-xl-5 row">
           <!--INFORMAZIONI SOTTO LA IMMAGINE DEL FILM-->
           <div class="col-6">
@@ -62,6 +68,7 @@
             <span class="myColorText">TRAMA:</span> {{ movie.Plot }}
           </p>
           <div class="d-flex justify-content-between">
+            <div class="myColorText fw-bold">{{movie.Type | uppercase }}</div>
             <div class="text-light">
               Genere: <span class="text-light fw-bold">{{ movie.Genre }}</span>
             </div>
