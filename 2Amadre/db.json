@@ -95,14 +95,23 @@
           "Year": "2023",
           "imdbID": "tt2906216",
           "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BZWM5MTQ3NDMtNGFiMS00Y2E5LWE2ZTUtNzM5MTcyZjM3ODRiXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_SX300.jpg"
+          "Year": "2016",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BNTBjZTgyZjUtZjk5ZS00NDBmLWI1ZTUtNWJiMmZiMGE0NGVhXkEyXkFqcGdeQXVyMTAxOTY2NTQ@._V1_SX300.jpg",
+          "imdbID": "tt7162186"
         },
         {
-          "Title": "Dragons: Race to the Edge",
-          "Year": "2015–2018",
-          "imdbID": "tt4816058",
-          "Type": "series",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BZmQzYzA1MzMtN2ZmOC00OTRjLWFhMDMtMWI1NTU4MWQ0MDdjXkEyXkFqcGdeQXVyMTE5NDQ1MzQ3._V1_SX300.jpg"
+          "Title": "Stage Mother",
+          "Year": "2020",
+          "imdbID": "tt8364138",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BODNhYmIzMTAtZWNjYS00NzdmLTkxYzItMmViY2JhMmY3MzcyXkEyXkFqcGdeQXVyNjU2NDIxOTM@._V1_SX300.jpg"
+        },
+        {
+          "Title": "La Cicciolina. Godmother of Scandal",
+          "Year": "2016",
+          "imdbID": "tt6181534",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BYmEwMzdmZmYtYzM3OS00NTcxLWI3NjYtOTU5ZjliMmU1OGU2XkEyXkFqcGdeQXVyMjMzMTE2MzY@._V1_SX300.jpg"
         }
       ],
       "id": 3

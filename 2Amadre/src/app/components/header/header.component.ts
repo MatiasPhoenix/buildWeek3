@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { Router } from '@angular/router';
 import { iLogin } from '../../Pages/auth/Models/login';
+import { iUser } from '../../Pages/auth/Models/i-user';
 
 @Component({
   selector: 'app-header',
@@ -11,7 +12,8 @@ import { iLogin } from '../../Pages/auth/Models/login';
 })
 export class HeaderComponent {
 
-  login:boolean = true;
+  currentUser!  : iUser
+  login         : boolean = true;
 
   constructor(
     private authSvc:AuthService,
@@ -21,10 +23,12 @@ export class HeaderComponent {
 
   ngOnInit(){
     this.authSvc.isLoggedIn$.subscribe(logged => this.login = logged);
+    this.authSvc.getUserById().subscribe(user => {
+      this.currentUser = user
+    })
   }
-     saveLogout(){
-      this.authSvc.logout()
-    }
 
-
+  saveLogout(){
+    this.authSvc.logout()
   }
+}
