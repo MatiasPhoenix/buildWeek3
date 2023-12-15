@@ -10,7 +10,6 @@ const routes: Routes = [
   },
   {
     path: 'auth', loadChildren: () => import('./Pages/auth/auth.module').then(m => m.AuthModule),
-
   },
   {
     path: 'dashboard', loadChildren: () => import('./Pages/dashboard/dashboard.module').then(m => m.DashboardModule),

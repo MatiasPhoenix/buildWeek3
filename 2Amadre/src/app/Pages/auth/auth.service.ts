@@ -14,11 +14,15 @@ import { iUser } from './Models/i-user';
 })
 export class AuthService {
 
-  jwtHelper:JwtHelperService  = new JwtHelperService()
-  authSubject                 = new BehaviorSubject<iAccessData|null>(null);
-  user$       = this.authSubject.asObservable();//contiene i dati dell'utente loggato oppure null
-  isLoggedIn$ = this.user$.pipe(map(user => !!user))//fornisce true o false in base allo stato di autenticaziuone dell'utente
-  //isLoggedIn$ = this.user$.pipe(map(user => Boolean(user)))
+  jwtHelper       : JwtHelperService    = new JwtHelperService()
+  registerUrl     : string              = environment.apiUrl + '/register';
+  loginUrl        : string              = environment.apiUrl + '/login'
+  userUrl         : string              = environment.apiUrl + '/users'
+  allUsernames    : string[]            = ['2ASorella', 'AbortoSpontaneo', 'TitsTicoli', '2Fijo', 'MustUrbazione', 'Prena'];
+
+  authSubject     = new BehaviorSubject<iAccessData|null>(null);
+  user$           = this.authSubject.asObservable();
+  isLoggedIn$     = this.user$.pipe(map(user => !!user));
 
   constructor(
     private http:HttpClient,
@@ -29,10 +33,7 @@ export class AuthService {
 
   }
 
-  registerUrl     : string     = environment.apiUrl + '/register';
-  loginUrl        : string     = environment.apiUrl + '/login'
-  userUrl         : string     = environment.apiUrl + '/users'
-  allUsernames    : string[]   = ['2ASorella', 'AbortoSpontaneo', 'TitsTicoli', '2Fijo', 'MustUrbazione', 'Prena'];
+
 
 
   signUp(data:iRegister):Observable<iAccessData>{
@@ -54,7 +55,7 @@ export class AuthService {
 
   autoLogout(jwt:string){
     const expDate = this.jwtHelper.getTokenExpirationDate(jwt) as Date;
-    const expMs = expDate.getTime() - new Date().getTime();
+    const expMs   = expDate.getTime() - new Date().getTime();
 
     setTimeout(()=>{
       this.logout()
@@ -96,8 +97,8 @@ export class AuthService {
     }
 
     const favoritesUpdate = {
-      email: user.email,
-      nome: user.nome,
+      email:    user.email,
+      nome:     user.nome,
       username: user.username
     }
 
