@@ -7,14 +7,6 @@
     <div *ngFor="let fav of allFavorites" class="col-md-3 col-lg-2 mx-lg-3 my-3">
       <div class="card">
         <a [routerLink]="['/dashboard/title', fav.imdbID]"><img [src]="fav.Poster" class="card-img-top posterImage" alt="..."></a>
-        <div class="card-body text-center">
-          <h5 class="card-title">{{fav.Title}}
-            <!-- <img *ngIf="!isFavorite[fav.imdbID]"  (click)="addToFavorites(movie)"         src="../../../assets/star.svg"      alt="star-icon">
-            <img *ngIf="isFavorite[fav.imdbID]"   (click)="removeFromFavorites(movie)"    src="../../../assets/star-fill.svg" alt="star-icon-filled"> -->
-          </h5>
-          <p class="card-text">{{fav.Year}}</p>
-          <a [routerLink]="['/dashboard/title', fav.imdbID]" class="btn btn-warning">Info</a>
-        </div>
       </div>
     </div>
   </div>
