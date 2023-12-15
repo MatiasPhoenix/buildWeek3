@@ -101,6 +101,14 @@
       "username": "prova27214",
       "favorites": [],
       "id": 5
+    },
+    {
+      "email": "test7@test.it",
+      "password": "$2a$10$SxP9wIaNSVJhhvjW2vj4veK/Gu0I21eddepGMrtkFwBuQUbvwftWC",
+      "nome": "test7",
+      "username": "Prena4087",
+      "favorites": [],
+      "id": 6
     }
   ]
 }
