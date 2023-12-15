@@ -147,9 +147,9 @@
                 </div>
               </div>
             </div>
-          </div>
-          <!--CARD PREMI & NOMINATIONS-->
-          <div class="mt-4">
+            </div>
+            <!--CARD PREMI & NOMINATIONS-->
+            <div class="mt-4">
             <div class="card rounded-3">
               <div class="card-body d-flex align-items-center">
                 <img
@@ -167,6 +167,7 @@
           </div>
         </div>
       </div>
+      <!-- EXTRA -->
       <div class="pippo-padding">
         <div class="row align-items-center">
           <p class="d-inline-flex gap-1 col-2">
@@ -186,24 +187,24 @@
             </button>
           </p>
           <div class="collapse col-6" id="collapseExample">
-            <div class="card card-body">
-              <p>Paesi in cui è stato girato: {{ movie.Country }}</p>
-              <p>Incasso: {{ movie.BoxOffice }}</p>
-              <p>Lingua: {{ movie.Language }}</p>
+            <div class="card card-body d-flex">
+              <span class="myColorText py-0">Paesi in cui è stato girato: </span><p>{{ movie.Country }}</p>
+              <span class="myColorText py-0">Incasso:</span><p> {{ movie.BoxOffice }}</p>
+              <span class="myColorText py-0">Lingua/e: </span><p>{{ movie.Language }}</p>
             </div>
           </div>
         </div>
       </div>
       <!--fine-->
     </div>
-    <div class="mt-5">
+    <div class="mt-5 posterImm">
       <h4><span class="myColorText">2Amadre</span> ti consiglia anche...</h4>
     </div>
 
     <div class="row">
-      <div *ngFor="let movie of movies" class="col-md-3 col-lg-2 mx-lg-3 my-3">
+      <div *ngFor="let movie of shuffledArray" class="col-md-3 col-lg-2 mx-lg-3 my-3">
         <div class="cardConsigliati">
-          <a [routerLink]="['/dashboard/title', movie.imdbID]"><img [src]="movie.Poster" class="card-img-top posterImage" alt="..."></a>
+          <a (click)="scrollToTop()" [routerLink]="['/dashboard/title', movie.imdbID]"><img [src]="movie.Poster" class="card-img-top posterImage" alt="..."></a>
           <div class="card-body text-center">
           </div>
         </div>
