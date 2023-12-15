@@ -33,6 +33,7 @@ export class RegisterComponent {
       },
       error: error =>{
         this.errorMessage = true;
+        this.registerData.username = ''
       }
     })
 
