@@ -14,8 +14,9 @@
     <div class="card col-md-7 col-lg-4 mb-5 mb-lg-0 mt-4">
       <div class="card shadow mt-4">
         <img class="posterImm" src="{{ movie.Poster }}" alt="..." />
-        <p class="text-center pt-3 pb-0 myColorText">-2Amadre Trailer-</p>
-        <video controls poster="">
+        <p *ngIf="!mostraVideo" (click)="mostraTrailer()" class="text-center pt-3 pb-0 myColorText pointer">-Mostra Trailer-</p>
+        <p *ngIf="mostraVideo" (click)="mostraTrailer()" class="text-center pt-3 pb-0 myColorText pointer">-2Amadre Trailer-</p>
+        <video *ngIf="mostraVideo" controls poster="">
           <source src="{{ videoPath }}" type="video/mp4">
           Il tuo browser non supporta il tag video.
         </video>

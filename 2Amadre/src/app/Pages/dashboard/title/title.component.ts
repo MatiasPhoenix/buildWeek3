@@ -11,7 +11,7 @@ import { Imoviedetails } from '../models/imoviedetails';
 })
 export class TitleComponent {
 
-
+  mostraVideo:boolean = false
   // film speciali 2Amadre
   movies  : Imovie[] =[
     {
@@ -202,5 +202,9 @@ export class TitleComponent {
   scrollToTop() {
     window.scrollTo(0, 0);
     this.shuffledArray = this.shuffleAndLimitArray(this.combinedArray, 5);
+  }
+
+  mostraTrailer(){
+    this.mostraVideo = !this.mostraVideo
   }
 }
