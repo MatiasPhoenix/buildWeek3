@@ -7,75 +7,53 @@
           <div class="rounded-top text-white d-flex flex-row backgroundCard">
             <div class="ms-4 mt-5 d-flex flex-column" >
               <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-1.webp"
-                alt="Generic placeholder image" class="img-fluid img-thumbnail mt-4 mb-2"
-                style="width: 150px; z-index: 1">
+                alt="Generic placeholder image" class="img-fluid img-thumbnail mt-4 mb-2">
               <button type="button" class="btn btn-dark btn-outline-warning"
               style="z-index: 1;">
                 Edit photo
               </button>
             </div>
-            <div class="ms-3" style="margin-top: 130px;">
-              <h5 class="text-warning">User Name</h5>
+            <div class="ms-3 titleuser">
+              <h5 class="text-warning">{{username}}</h5>
             </div>
           </div>
           <div class="p-4 text-black bg-trasparent">
             <div class="d-flex justify-content-end text-center py-1">
               <div>
-                <p class="mb-1 text-light h5">253</p>
-                <p class="small text-warning mb-0 me-3">Favorites</p>
+                <p class="mb-1 text-light h5 toptext">{{allFavorites.length}}</p>
+                <p class="small text-warning mb-0 me-3 toptext">Preferiti</p>
               </div>
               <div>
-                <p class="mb-1 text-light h5">253</p>
-                <p class="small text-warning mb-0 me-3">Film Guardati</p>
+                <p class="mb-1 text-light h5 toptext">253</p>
+                <p class="small text-warning mb-0 me-3 toptext">Film guardati</p>
               </div>
               <div>
-                <p class="mb-1 text-light h5">253</p>
-                <p class="small text-warning mb-0">Serie TV Guardate</p>
+                <p class="mb-1 text-light h5 toptext">253</p>
+                <p class="small text-warning mb-0 toptext">Serie TV guardate</p>
               </div>
             </div>
           </div>
           <div class="card-body p-4 text-black">
             <div class="mb-5">
-              <p class="lead fw-normal mb-2">Informazioni Profilo</p>
-              <div class="p-4 backgroundAbout">
+              <p class="lead info-line fw-normal mb-2">Informazioni Profilo</p>
+              <div class="p-4 backgroundAbout" *ngIf="currentUser">
                 <p class="font-italic mb-1">{{currentUser.nome}}</p>
                 <p class="font-italic mb-1">{{currentUser.email}}</p>
               </div>
             </div>
-            <div class="d-flex justify-content-between align-items-center mb-4">
-              <p class="lead fw-normal mb-0">Favourites</p>
-              <p class="mb-0"><a routerLink="favorites" class="text-muted">Mostra Tutti</a></p>
+            <div class="d-flex pref-line justify-content-between align-items-center mb-4">
+              <p class="lead fw-normal mb-0">Preferiti</p>
+              <p class="mb-0"><a routerLink="favorites" class="showAll">Mostra Tutti</a></p>
             </div>
-            <div class="row g-2">
-              <div class="col-md-3 col-lg-2 mx-lg-3 my-3">
-                <div class="cardFavourite">
-                  <a><img [src]="" class="card-img-top posterImage" alt="..."></a>
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Titolo</h5>
-                    <p class="card-text">Anno</p>
-                    <a class="btn btn-warning">Info</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 col-lg-2 mx-lg-3 my-3">
-                <div class="cardFavourite">
-                  <a><img [src]="" class="card-img-top posterImage" alt="..."></a>
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Titolo</h5>
-                    <p class="card-text">Anno</p>
-                    <a class="btn btn-warning">Info</a>
-                  </div>
-                </div>
-              </div>
+            <div *ngIf="!allFavorites.length" class="text-center pt-5">
+              <h6>Oops, sembra non hai ancora aggiunto nessun titolo ai preferiti, </h6>
+              <h6>aggiungine uno per mostrarlo qui!</h6>
             </div>
-            <div class="row g-2">
-              <div class="col">
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/Lightbox/Original/img%20(108).webp"
-                  alt="image 1" class="w-100 rounded-3">
-              </div>
-              <div class="col">
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/Lightbox/Original/img%20(114).webp"
-                  alt="image 1" class="w-100 rounded-3">
+            <div *ngIf="allFavorites.length" class="row justify-content-center">
+              <div *ngFor="let fav of allFavorites" class="col-7 col-sm-6 col-md-5 col-lg-4 my-3">
+                <div class="cardFavourite">
+                  <a [routerLink]="['/dashboard/title', fav.imdbID]"><img [src]="fav.Poster" class="card-img-top posterImage" alt="..."></a>
+                </div>
               </div>
             </div>
           </div>

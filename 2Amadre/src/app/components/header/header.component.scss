@@ -23,3 +23,26 @@ header{
     transform: scale(1.2);
     z-index: 2;
 }
+
+@media screen and (max-width:575.50px) {
+    header {
+      display: block;
+    }
+  
+    .container {
+      text-align: right;
+    }
+  
+    .navbar-nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-grow: 1;
+      margin-left: 10px;
+    }
+  
+    .navbar-brand {
+      margin-right: auto;
+      margin-left: 20px;
+    }
+  }

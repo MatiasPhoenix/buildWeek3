@@ -1,1 +1,21 @@
 @import "../../auth/auth.component.scss";
+
+.pagecontainer{
+    height: 100vh;
+}
+.posterImage{
+  height: 260px;
+  box-shadow: 1px 1px 5px black;
+}
+.card{
+  transition: 0.3s;
+}
+.card:hover{
+  transform: scale(1.1);
+  z-index: 2;
+}
+.card-body{
+  height: 70px;
+  background: linear-gradient(to bottom, #000000, #080808, #101010, #151515, #1a1a1a);
+  border-top: 1px solid rgba(128, 128, 128, 0.286);
+}

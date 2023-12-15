@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { iUser } from '../auth/Models/i-user';
 import { AuthService } from '../auth/auth.service';
+import { Imovie } from '../dashboard/models/imovie';
 
 @Component({
   selector: 'app-user-page',
@@ -9,14 +10,39 @@ import { AuthService } from '../auth/auth.service';
 })
 export class UserPageComponent {
 
-currentUser! : iUser
+  currentUser!  : iUser
+  profilePic!   : string
+  username!     : string
+  allFavorites  : Imovie[] = []
+  allUsernames  : string[] = ['test1', 'prova2', 'tuofiglio', 'testicolo2', 'bigtest5'];
 
-constructor(private authSvc : AuthService) {}
+  constructor(private authSvc : AuthService) {}
 
-ngOnInit() {
-  this.authSvc.getUserById().subscribe(user => {
-    this.currentUser = user
-  })
-}
+  ngOnInit() {
+    this.authSvc.getUserById().subscribe(user => {
+      this.currentUser = user
+      this.loadFavorites();
+      this.test()
+    })
+    this.username = this.getRandomUsername();
+    this.profilePic = 'https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-1.webp'
+  }
 
+  test() {
+    console.log(this.currentUser)
+    console.log(this.allFavorites)
+  }
+
+  getRandomUsername(): string {
+    const randomIndex = Math.floor(Math.random() * this.allUsernames.length);
+    return this.allUsernames[randomIndex];
+  }
+
+  loadFavorites() {
+    this.allFavorites = [];
+    if (this.currentUser && this.currentUser.favorites) {
+      this.allFavorites = [...this.currentUser.favorites];
+      this.allFavorites.splice(3);
+    }
+  }
 }

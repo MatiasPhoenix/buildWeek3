@@ -88,7 +88,22 @@
       "email": "mario@rossi.it",
       "password": "$2a$10$D3viNAOCcvrFaVE5ki5PPe9CtKtDz9TUfmRtkO7xux40GT1WmibYa",
       "nome": "Mario",
-      "favorites": [],
+      "favorites": [
+        {
+          "Title": "Amor de madre",
+          "Year": "2013",
+          "imdbID": "tt3000156",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BNzRmNmQwODItM2Y2Zi00MDFiLTk2MzAtYjNjN2MyMTk0YTRmXkEyXkFqcGdeQXVyMTA0MjU0Ng@@._V1_SX300.jpg"
+        },
+        {
+          "Title": "La madre distratta",
+          "Type": "movie",
+          "Year": "2016",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BNTBjZTgyZjUtZjk5ZS00NDBmLWI1ZTUtNWJiMmZiMGE0NGVhXkEyXkFqcGdeQXVyMTAxOTY2NTQ@._V1_SX300.jpg",
+          "imdbID": "tt7162186"
+        }
+      ],
       "id": 5
     }
   ]
