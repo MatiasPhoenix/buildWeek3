@@ -167,7 +167,7 @@ export class TitleComponent {
     Website: '',
     Response: ''
   }
-
+  videoPath= "../../../../assets/Rick Roll.mp4"
   constructor(
     private dSvc    : DashboardService,
     private router  : Router,
