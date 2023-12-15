@@ -22,9 +22,15 @@ export class UserPageComponent {
     this.authSvc.getUserById().subscribe(user => {
       this.currentUser = user
       this.loadFavorites();
+      this.test()
     })
     this.username = this.getRandomUsername();
     this.profilePic = 'https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-1.webp'
+  }
+
+  test() {
+    console.log(this.currentUser)
+    console.log(this.allFavorites)
   }
 
   getRandomUsername(): string {
@@ -36,6 +42,7 @@ export class UserPageComponent {
     this.allFavorites = [];
     if (this.currentUser && this.currentUser.favorites) {
       this.allFavorites = [...this.currentUser.favorites];
+      this.allFavorites.splice(3);
     }
   }
 }
