@@ -15,11 +15,17 @@ export class UserPageComponent {
   username!     : string
   currentUser!  : iUser
   profilePic!   : string
-  allFavorites  : Imovie[]  = []
+  allFavorites  : Imovie[]  = [];
   movieWatch    : number    = this.getRandomWatchCount();
   serieWatch    : number    = this.getRandomWatchCount();
   form          : boolean   = false;
-
+  avatarSelect  : boolean   = false;
+  avatars       : string[]  = [
+    "https://gravatar.com/avatar/2063df7663a53f37cd445728e664f83e?s=200&d=robohash&r=x",
+    "https://robohash.org/3a63a534e2193fcca89aede877135086?set=set4&bgset=&size=200x200",
+    "https://gravatar.com/avatar/3a63a534e2193fcca89aede877135086?s=200&d=robohash&r=x",
+    "https://gravatar.com/avatar/a51763ee45a24d85b9205cbf778235fc?s=200&d=robohash&r=x"
+  ];
 
   constructor(private authSvc : AuthService) {}
 
@@ -27,14 +33,8 @@ export class UserPageComponent {
     this.authSvc.getUserById().subscribe(user => {
       this.currentUser = user
       this.loadFavorites();
-      this.test()
     })
-    this.profilePic = 'https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-1.webp'
-  }
-
-  test() {
-    console.log(this.currentUser)
-    console.log(this.allFavorites)
+    this.profilePic = 'https://robohash.org/3a63a534e2193fcca89aede877135086?set=set4&bgset=&size=200x200'
   }
 
   getRandomWatchCount(){
@@ -68,8 +68,17 @@ export class UserPageComponent {
 
     this.authSvc.updateData(this.currentUser).subscribe()
     this.modificaProfilo()
-    this.nome = ''
-    this.email = ''
+    this.nome     = ''
+    this.email    = ''
     this.username = ''
+  }
+
+  toggleAvatarSelection(): void {
+    this.avatarSelect = !this.avatarSelect;
+  }
+
+  selectAvatar(avatar: string): void {
+    this.profilePic   = avatar;
+    this.avatarSelect = false;
   }
 }

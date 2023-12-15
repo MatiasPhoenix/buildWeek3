@@ -5,13 +5,19 @@
       <div class="col col-lg-9 col-xl-7">
         <div class="card">
           <div class="rounded-top text-white d-flex flex-row backgroundCard">
-            <div class="ms-4 mt-5 d-flex flex-column" >
-              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-1.webp"
-                alt="Generic placeholder image" class="img-fluid img-thumbnail mt-4 mb-2">
-              <button type="button" class="btn btn-dark btn-outline-warning"
-              style="z-index: 1;">
+            <div class="ms-4 mt-5 d-flex flex-column">
+              <img [src]="profilePic" alt="Generic placeholder image" class="img-fluid img-thumbnail mt-4 mb-2">
+              <button type="button" class="btn btn-dark btn-outline-warning" (click)="toggleAvatarSelection()" style="z-index: 1;">
                 Edit photo
               </button>
+            </div>
+            <div *ngIf="avatarSelect" class="avatar-selection-popup">
+              <h3 class="text-warning text-center">Choose an Avatar</h3>
+              <div class="row justify-content-around">
+                <div *ngFor="let avatar of avatars" (click)="selectAvatar(avatar)" class="avatar-thumbnail col-2">
+                  <img [src]="avatar" alt="Avatar" class="avatarImg">
+                </div>
+              </div>
             </div>
             <div class="ms-3 titleuser">
               <h5 class="text-warning">{{currentUser.username}}</h5>

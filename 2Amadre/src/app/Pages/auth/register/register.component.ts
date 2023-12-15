@@ -17,11 +17,11 @@ export class RegisterComponent {
     ){}
 
   registerData:iRegister = {
-    email: '',
-    password: '',
-    nome: '',
-    username: '',
-    favorites: []
+    email     : '',
+    password  : '',
+    nome      : '',
+    username  : '',
+    favorites : []
   }
 
 
