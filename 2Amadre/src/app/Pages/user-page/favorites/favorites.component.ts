@@ -51,9 +51,9 @@ export class FavoritesComponent {
           console.log(res);
         });
 
+        this.loadFavorites()
         this.isFavorite[movie.imdbID] = false
       }
     }
   }
-
 }

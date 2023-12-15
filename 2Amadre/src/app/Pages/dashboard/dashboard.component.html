@@ -31,8 +31,8 @@
           </a>
           <div class="card-body text-center">
             <h5 class="card-title">{{movie.Title}}
-              <img *ngIf="!isFavorite[movie.imdbID]"  (click)="addToFavorites(movie)" class="ps-2" id="star-empty" src="../../../assets/star.svg" alt="star-icon">
-              <img *ngIf="isFavorite[movie.imdbID]"   (click)="removeFromFavorites(movie)" class="ps-2" id="star-fill" src="../../../assets/star-fill.svg" alt="star-icon-filled">
+              <img *ngIf="!isFavorite[movie.imdbID]"  (click)="addToFavorites(movie)"       class="ps-2" id="star-empty" src="../../../assets/star.svg" alt="star-icon">
+              <img *ngIf="isFavorite[movie.imdbID]"   (click)="removeFromFavorites(movie)"  class="ps-2" id="star-fill" src="../../../assets/star-fill.svg" alt="star-icon-filled">
             </h5>
             <p class="card-text">{{movie.Year}}</p>
             <a [routerLink]="['/dashboard/title', movie.imdbID]" class="btn btn-warning btn-block">Info</a>
