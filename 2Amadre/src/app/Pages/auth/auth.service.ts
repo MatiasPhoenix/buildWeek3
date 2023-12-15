@@ -33,7 +33,7 @@ export class AuthService {
   registerUrl     : string     = environment.apiUrl + '/register';
   loginUrl        : string     = environment.apiUrl + '/login'
   userUrl         : string     = environment.apiUrl + '/users'
-  allUsernames    : string[]   = ['test1', 'prova2', 'tuofiglio', 'testicolo2', 'bigtest5'];
+  allUsernames    : string[]   = ['2ASorella', 'AbortoSpontaneo', 'TitsTicoli', '2Fijo', 'MustUrbazione', 'Prena'];
 
 
   signUp(data:iRegister):Observable<iAccessData>{
