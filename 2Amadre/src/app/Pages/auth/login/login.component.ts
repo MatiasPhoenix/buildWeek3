@@ -29,9 +29,7 @@ export class LoginComponent {
 
     },
     error: error => {
-      console.error('Errore durante il login:', error);
         this.errorMessage = true
-        console.log(this.errorMessage);
       }
     })
   }

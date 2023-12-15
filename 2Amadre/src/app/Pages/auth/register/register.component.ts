@@ -9,6 +9,8 @@ import { iRegister } from '../Models/register';
   styleUrl: './register.component.scss'
 })
 export class RegisterComponent {
+  errorMessage!: boolean;
+
   constructor(
     private authSvc:AuthService,
     private router:Router
@@ -25,8 +27,18 @@ export class RegisterComponent {
 
   save(){
     this.authSvc.signUp(this.registerData)
-    .subscribe(data => {
+    .subscribe({
+      next:data =>{
         this.router.navigate(['/auth/login'])
+      },
+      error: error =>{
+        this.errorMessage = true;
+      }
     })
+
+
+
+
+
   }
 }
