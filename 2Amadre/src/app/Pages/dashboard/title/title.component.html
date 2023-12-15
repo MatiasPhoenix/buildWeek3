@@ -201,7 +201,7 @@
       <h4><span class="myColorText">2Amadre</span> ti consiglia anche...</h4>
     </div>
 
-    <div class="row">
+    <div class="row container">
       <div *ngFor="let movie of shuffledArray" class="col-md-3 col-lg-2 mx-lg-3 my-3">
         <div class="cardConsigliati">
           <a (click)="scrollToTop()" [routerLink]="['/dashboard/title', movie.imdbID]"><img [src]="movie.Poster" class="card-img-top posterImage" alt="..."></a>
