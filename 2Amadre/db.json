@@ -97,6 +97,7 @@
           "Poster": "https://m.media-amazon.com/images/M/MV5BNzRmNmQwODItM2Y2Zi00MDFiLTk2MzAtYjNjN2MyMTk0YTRmXkEyXkFqcGdeQXVyMTA0MjU0Ng@@._V1_SX300.jpg"
         },
         {
+<<<<<<< HEAD
           "Title": "Amor de madre",
           "Year": "2013",
           "imdbID": "tt3000156",
@@ -125,6 +126,8 @@
           "Poster": "https://m.media-amazon.com/images/M/MV5BNzRmNmQwODItM2Y2Zi00MDFiLTk2MzAtYjNjN2MyMTk0YTRmXkEyXkFqcGdeQXVyMTA0MjU0Ng@@._V1_SX300.jpg"
         },
         {
+=======
+>>>>>>> 19b0a011238eb4cce463383d1252bd2a0b354a72
           "Title": "La madre distratta",
           "Type": "movie",
           "Year": "2016",
@@ -151,6 +154,7 @@
           "imdbID": "tt0778641",
           "Type": "movie",
           "Poster": "https://m.media-amazon.com/images/M/MV5BMmM3ZjM3YWUtYzllZS00YmY1LWFlZmUtNTQ0MGY2ZmQ2ZGU0XkEyXkFqcGdeQXVyNTk0MzkxNDk@._V1_SX300.jpg"
+<<<<<<< HEAD
         },
         {
           "Title": "Amor de madre",
@@ -256,6 +260,8 @@
           "imdbID": "tt7013194",
           "Type": "movie",
           "Poster": "https://m.media-amazon.com/images/M/MV5BN2NjN2ZmYWQtM2FhZS00MjZlLWFjNzQtYjJmOGY2NDdmNTlhXkEyXkFqcGdeQXVyMjI5OTkwMTc@._V1_SX300.jpg"
+=======
+>>>>>>> 19b0a011238eb4cce463383d1252bd2a0b354a72
         }
       ],
       "id": 5

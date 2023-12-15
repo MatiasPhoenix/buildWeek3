@@ -1,9 +1,5 @@
 @import "../auth.component.scss";
 
-.pointer{
-  cursor: pointer;
-}
-
 .box-auth{
   max-width: 50%;
 }
@@ -24,9 +20,12 @@ h5{
     font-size: 0.8rem;
   }
 }
+<<<<<<< HEAD
 
 @media screen and (max-width:425px){
   .box-auth{
     margin-top: 50px;
   }
 }
+=======
+>>>>>>> 19b0a011238eb4cce463383d1252bd2a0b354a72

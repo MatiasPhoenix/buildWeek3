@@ -61,9 +61,9 @@ export class DashboardComponent {
   ]
 
   ngOnInit() {
-    this.loadFavorites();
     this.authSvc.getUserById().subscribe(user => {
       this.currentUser = user
+      this.loadFavorites();
     })
   }
 
@@ -82,6 +82,8 @@ export class DashboardComponent {
       this.addImageUrl()
       this.checkMoviesLength()
       this.loadFavorites()
+      console.log(this.movies);
+
     })
   }
 
@@ -126,6 +128,7 @@ export class DashboardComponent {
   scrollToTop() {
     window.scrollTo(0, 0);
   }
+
   // getSingleMovie(){
   //   return this.svc.getMovie(this.movie).subscribe(data => console.log(data))
   // }
@@ -133,9 +136,7 @@ export class DashboardComponent {
   loadFavorites() {
     if(this.currentUser && this.currentUser.favorites) {
       this.currentUser.favorites.forEach(fav => {
-        console.log(fav)
         this.isFavorite[fav.imdbID] = true;
-        console.log(this.isFavorite)
       })
     } else
     return;
