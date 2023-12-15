@@ -17,8 +17,8 @@ export class LoginComponent {
     ){}
 
   loginData:iLogin = {
-    email: 'mario@rossi.it',
-    password: 'password'
+    email    : '',
+    password : ''
   }
 
   saveLogin(){
@@ -29,9 +29,7 @@ export class LoginComponent {
 
     },
     error: error => {
-      console.error('Errore durante il login:', error);
         this.errorMessage = true
-        console.log(this.errorMessage);
       }
     })
   }

@@ -9,8 +9,8 @@ import { AuthService } from './auth.service';
 export class AuthGuard{
 
   constructor(
-    private authSvc:AuthService,
-    private router:Router
+    private authSvc :AuthService,
+    private router  :Router
     ){}
 
 

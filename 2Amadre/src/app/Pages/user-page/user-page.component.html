@@ -5,13 +5,19 @@
       <div class="col col-lg-9 col-xl-7">
         <div class="card">
           <div class="rounded-top text-white d-flex flex-row backgroundCard">
-            <div class="ms-4 mt-5 d-flex flex-column" >
-              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-1.webp"
-                alt="Generic placeholder image" class="img-fluid img-thumbnail mt-4 mb-2">
-              <button type="button" class="btn btn-dark btn-outline-warning"
-              style="z-index: 1;">
+            <div class="ms-4 mt-5 d-flex flex-column">
+              <img [src]="profilePic" alt="Generic placeholder image" class="img-fluid img-thumbnail mt-4 mb-2">
+              <button type="button" class="btn btn-dark btn-outline-warning" (click)="toggleAvatarSelection()" style="z-index: 1;">
                 Edit photo
               </button>
+            </div>
+            <div *ngIf="avatarSelect" class="avatar-selection-popup">
+              <h3 class="text-warning text-center">Choose an Avatar</h3>
+              <div class="row justify-content-around">
+                <div *ngFor="let avatar of avatars" (click)="selectAvatar(avatar)" class="avatar-thumbnail col-2">
+                  <img [src]="avatar" alt="Avatar" class="avatarImg">
+                </div>
+              </div>
             </div>
             <div class="ms-3 titleuser">
               <h5 class="text-warning">{{currentUser.username}}</h5>
@@ -20,7 +26,7 @@
           <div class="p-4 text-black bg-trasparent">
             <div class="d-flex justify-content-end text-center py-1">
               <div routerLink="favorites" class="pointer">
-                <p class="mb-1 text-light h5 toptext">{{allFavorites.length}}</p>
+                <p class="mb-1 text-light h5 toptext">{{currentUser.favorites.length}}</p>
                 <p class="small text-warning mb-0 me-3 toptext">Preferiti</p>
               </div>
               <div>
@@ -33,7 +39,7 @@
               </div>
             </div>
           </div>
-          <div class="card-body p-4 text-black">
+          <div class="card-body p-4 text-black infoProfilo">
             <div class="mb-5">
               <div class="d-flex justify-content-between">
                 <p class="lead info-line fw-normal mb-2">Informazioni Profilo</p>
