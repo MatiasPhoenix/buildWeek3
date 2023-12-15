@@ -1,0 +1,35 @@
+footer{
+    background: linear-gradient(to top, #000000, #080808, #101010, #151515, #1a1a1a);
+    border-top: 1px solid rgba(128, 128, 128, 0.436);
+}
+
+.footer, .logos, .address {
+    width: 60%;
+}
+
+
+p{
+    font-size: 0.7rem;
+    color:#ffc107;
+    text-shadow: 1px 1px 3px black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+li{
+    font-size: 0.9rem;
+    color:#ffc10773;
+    text-shadow: 1px 1px 3px black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor:pointer;
+}
+
+li:hover{
+    font-size: 0.9rem;
+    color:#ffc107;
+    text-shadow: 1px 1px 3px black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.egg{
+    width: 60%;
+}
