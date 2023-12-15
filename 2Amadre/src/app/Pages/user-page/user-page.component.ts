@@ -12,7 +12,6 @@ export class UserPageComponent {
 
   currentUser!  : iUser
   profilePic!   : string
-  username!     : string
   allFavorites  : Imovie[] = []
   allUsernames  : string[] = ['test1', 'prova2', 'tuofiglio', 'testicolo2', 'bigtest5'];
 
@@ -24,18 +23,12 @@ export class UserPageComponent {
       this.loadFavorites();
       this.test()
     })
-    this.username = this.getRandomUsername();
     this.profilePic = 'https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-1.webp'
   }
 
   test() {
     console.log(this.currentUser)
     console.log(this.allFavorites)
-  }
-
-  getRandomUsername(): string {
-    const randomIndex = Math.floor(Math.random() * this.allUsernames.length);
-    return this.allUsernames[randomIndex];
   }
 
   loadFavorites() {

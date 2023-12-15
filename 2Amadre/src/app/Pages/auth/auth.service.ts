@@ -30,12 +30,16 @@ export class AuthService {
 
   }
 
-  registerUrl :string = environment.apiUrl + '/register';
-  loginUrl    :string = environment.apiUrl + '/login'
-  userUrl     :string = environment.apiUrl + '/users'
+  registerUrl     : string     = environment.apiUrl + '/register';
+  loginUrl        : string     = environment.apiUrl + '/login'
+  userUrl         : string     = environment.apiUrl + '/users'
+  allUsernames    : string[]   = ['test1', 'prova2', 'tuofiglio', 'testicolo2', 'bigtest5'];
 
 
   signUp(data:iRegister):Observable<iAccessData>{
+    if (data.username === '') {
+      data.username = this.assignRandomUsername();
+    }
     return this.http.post<iAccessData>(this.registerUrl, data)
   }
 
@@ -102,6 +106,12 @@ export class AuthService {
         this.authSubject.next({ ...accessData, user: updatedUser });
         localStorage.setItem('accessData', JSON.stringify({ ...accessData, user: updatedUser }));
       }));
+  }
+
+  assignRandomUsername() {
+    const randomIndex = Math.floor(Math.random() * this.allUsernames.length);
+    const randomNum   = Math.floor(Math.random() * 9999)
+    return this.allUsernames[randomIndex] + randomNum;
   }
 }
 

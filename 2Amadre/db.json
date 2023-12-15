@@ -72,31 +72,26 @@
     },
     {
       "email": "test2@test.it",
-      "password": "$2a$10$en269.p.fjZLNXkFsAbv7e4bWeroIubsSdt5MHZYqER/lEb8utzDe",
+      "password": "$2a$10$S8vvGyDHEuIMwFnqRCHEouAXJbS.z0Z36AOlo6WlvaVijQITj9y6C",
       "nome": "test2",
+      "username": "tuofiglio",
       "favorites": [],
       "id": 3
     },
     {
-      "email": "test4@test.it",
-      "password": "$2a$10$sV2uoIhVPDxEGWc.4KTpPOM88qxB6QdFRuSVpfyOsCwxFajKEH5VO",
-      "nome": "ddddddddddddd",
+      "email": "test3@test.it",
+      "password": "$2a$10$P3FDPGBTrfQQkaUQ1GfI3uC45tjk5N0JegDD/TucstTV8p02biR8S",
+      "nome": "test3",
+      "username": "achicco",
       "favorites": [],
       "id": 4
     },
     {
-      "email": "mario@rossi.it",
-      "password": "$2a$10$D3viNAOCcvrFaVE5ki5PPe9CtKtDz9TUfmRtkO7xux40GT1WmibYa",
-      "nome": "Mario",
-      "favorites": [
-        {
-          "Title": "Amor de madre",
-          "Year": "2013",
-          "imdbID": "tt3000156",
-          "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BNzRmNmQwODItM2Y2Zi00MDFiLTk2MzAtYjNjN2MyMTk0YTRmXkEyXkFqcGdeQXVyMTA0MjU0Ng@@._V1_SX300.jpg"
-        }
-      ],
+      "email": "ciaone@ciao.it",
+      "password": "$2a$10$WYZfeyXMh2VAv8J8eGdcI.2Lq2VeHYGhojWtAnKBd1L2quL0lThfq",
+      "nome": "test",
+      "username": "prova27214",
+      "favorites": [],
       "id": 5
     }
   ]
