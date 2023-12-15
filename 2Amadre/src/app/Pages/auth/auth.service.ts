@@ -8,7 +8,6 @@ import { iLogin } from './Models/login';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { Router } from '@angular/router';
 import { iUser } from './Models/i-user';
-import { Imovie } from '../dashboard/models/imovie';
 
 @Injectable({
   providedIn: 'root'
@@ -98,7 +97,8 @@ export class AuthService {
 
     const favoritesUpdate = {
       email: user.email,
-      nome: user.nome
+      nome: user.nome,
+      username: user.username
     }
 
     const url = `${this.userUrl}/${accessData.user.id}`;
