@@ -90,18 +90,32 @@
       "nome": "Mario",
       "favorites": [
         {
-          "Title": "Amor de madre",
-          "Year": "2013",
-          "imdbID": "tt3000156",
+          "Title": "The Batman",
+          "Year": "2022",
+          "imdbID": "tt1877830",
           "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BNzRmNmQwODItM2Y2Zi00MDFiLTk2MzAtYjNjN2MyMTk0YTRmXkEyXkFqcGdeQXVyMTA0MjU0Ng@@._V1_SX300.jpg"
+          "Poster": "https://m.media-amazon.com/images/M/MV5BM2MyNTAwZGEtNTAxNC00ODVjLTgzZjUtYmU0YjAzNmQyZDEwXkEyXkFqcGdeQXVyNDc2NTg3NzA@._V1_SX300.jpg"
         },
         {
-          "Title": "La madre distratta",
+          "Title": "Batman: The Animated Series",
+          "Year": "1992–1995",
+          "imdbID": "tt0103359",
+          "Type": "series",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BOTM3MTRkZjQtYjBkMy00YWE1LTkxOTQtNDQyNGY0YjYzNzAzXkEyXkFqcGdeQXVyOTgwMzk1MTA@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Dungeons & Dragons: Honor Among Thieves",
+          "Year": "2023",
+          "imdbID": "tt2906216",
           "Type": "movie",
-          "Year": "2016",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BNTBjZTgyZjUtZjk5ZS00NDBmLWI1ZTUtNWJiMmZiMGE0NGVhXkEyXkFqcGdeQXVyMTAxOTY2NTQ@._V1_SX300.jpg",
-          "imdbID": "tt7162186"
+          "Poster": "https://m.media-amazon.com/images/M/MV5BZWM5MTQ3NDMtNGFiMS00Y2E5LWE2ZTUtNzM5MTcyZjM3ODRiXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Dragons: Race to the Edge",
+          "Year": "2015–2018",
+          "imdbID": "tt4816058",
+          "Type": "series",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BZmQzYzA1MzMtN2ZmOC00OTRjLWFhMDMtMWI1NTU4MWQ0MDdjXkEyXkFqcGdeQXVyMTE5NDQ1MzQ3._V1_SX300.jpg"
         }
       ],
       "id": 5
