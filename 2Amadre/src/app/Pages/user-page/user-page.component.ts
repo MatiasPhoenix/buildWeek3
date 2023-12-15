@@ -13,7 +13,7 @@ export class UserPageComponent {
   currentUser!  : iUser
   profilePic!   : string
   username!     : string
-  allFavorites! : Imovie[]
+  allFavorites  : Imovie[] = []
   allUsernames  : string[] = ['test1', 'prova2', 'tuofiglio', 'testicolo2', 'bigtest5'];
 
   constructor(private authSvc : AuthService) {}
