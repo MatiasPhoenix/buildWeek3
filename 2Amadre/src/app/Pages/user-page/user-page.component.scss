@@ -2,6 +2,7 @@
 .backgroundCard{
   background: linear-gradient(to bottom, #000000, #080808, #101010, #151515, #1a1a1a);
   height:200px;
+  border-bottom: 1px solid rgba(106, 106, 106, 0.473);
 }
 .backgroundAbout{
   background-color: #f8f9fa;
@@ -20,4 +21,53 @@
 .cardFavourite:hover{
   transform: scale(1.1);
   z-index: 2;
+}
+
+.toptext{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.titleuser{
+  margin-top: 130px;
+  text-shadow: 1px 1px 6px black;
+}
+
+.text-black{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+
+.pref-line, .info-line{
+  border-bottom: 1px solid rgba(106, 106, 106, 0.64);
+}
+
+.card{
+  box-shadow: 1px 1px 4px rgb(255, 255, 255);
+}
+
+.showAll{
+  color:#c89601;
+}
+
+.img-fluid{
+  box-shadow: 1px 1px 5px black;
+  border: 1px solid rgb(106, 106, 106);
+  width: 150px;
+  z-index: 1;
+}
+
+.btn{
+  box-shadow: 1px 1px 5px black;
+}
+
+@media (max-width: 517.90px){
+  .toptext{
+    display:none;
+  }
+}
+
+@media (max-width: 482px){
+  .cardFavourite{
+    margin-left: -40px;
+  }
 }
