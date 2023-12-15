@@ -1,168 +1,76 @@
 {
   "users": [
     {
-      "email": "carmelo@zappulla.com",
-      "password": "$2a$10$89Q3jpijivUW8BKHRKxU/uuGsc8NhH/EjnsDLcegKk/4hgc4cMMTe",
-      "nome": "carmelo",
-      "id": 1
-    },
-    {
-      "email": "test@test.it",
-      "password": "$2a$10$19nSMvtWAkio3fR3IK86pO4T.CwrykpKvhUf/Q2J6cjsVNiVosGca",
-      "nome": "test",
+      "email": "test@icoli.it",
+      "password": "$2a$10$xa1ararnm1YKno1iTTMGV.shgu7hzI3ZenoXLnfSuHHeplzPioGp.",
+      "nome": "imiei",
+      "username": "MustUrbazione5948",
       "favorites": [
         {
-          "Title": "Batman Begins",
-          "Year": "2005",
-          "imdbID": "tt0372784",
+          "Title": "Batman Forever",
+          "Year": "1995",
+          "imdbID": "tt0112462",
           "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BOTY4YjI2N2MtYmFlMC00ZjcyLTg3YjEtMDQyM2ZjYzQ5YWFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+          "Poster": "https://m.media-amazon.com/images/M/MV5BNDdjYmFiYWEtYzBhZS00YTZkLWFlODgtY2I5MDE0NzZmMDljXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
         },
         {
-          "Title": "Batman Ninja",
-          "Year": "2018",
-          "imdbID": "tt7451284",
-          "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BMjFlMDc2NGMtYjkyMS00MTlhLTgxNWItMmYxZjc5NzVhMGE0XkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_SX300.jpg"
-        },
-        {
-          "Title": "Scooby-Doo & Batman: The Brave and the Bold",
-          "Year": "2018",
-          "imdbID": "tt7578566",
-          "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BNzg1NGY1YjItMDc5MC00NDkwLTgxZTItNjFlYWM5YzI1ZGNiXkEyXkFqcGdeQXVyMzc1MzYxMjc@._V1_SX300.jpg"
-        },
-        {
-          "Title": "Batman Begins",
-          "Year": "2005",
-          "imdbID": "tt0372784",
-          "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BOTY4YjI2N2MtYmFlMC00ZjcyLTg3YjEtMDQyM2ZjYzQ5YWFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
-        },
-        {
-          "Title": "The Batman",
-          "Year": "2022",
-          "imdbID": "tt1877830",
-          "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BM2MyNTAwZGEtNTAxNC00ODVjLTgzZjUtYmU0YjAzNmQyZDEwXkEyXkFqcGdeQXVyNDc2NTg3NzA@._V1_SX300.jpg"
-        },
-        {
-          "Title": "Batman Begins",
-          "Year": "2005",
-          "imdbID": "tt0372784",
-          "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BOTY4YjI2N2MtYmFlMC00ZjcyLTg3YjEtMDQyM2ZjYzQ5YWFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
-        },
-        {
-          "Title": "Batman Begins",
-          "Year": "2005",
-          "imdbID": "tt0372784",
-          "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BOTY4YjI2N2MtYmFlMC00ZjcyLTg3YjEtMDQyM2ZjYzQ5YWFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
-        },
-        {
-          "Title": "The Batman",
-          "Year": "2022",
-          "imdbID": "tt1877830",
-          "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BM2MyNTAwZGEtNTAxNC00ODVjLTgzZjUtYmU0YjAzNmQyZDEwXkEyXkFqcGdeQXVyNDc2NTg3NzA@._V1_SX300.jpg"
-        }
-      ],
-      "id": 2
-    },
-    {
-      "email": "test2@test.it",
-      "password": "$2a$10$S8vvGyDHEuIMwFnqRCHEouAXJbS.z0Z36AOlo6WlvaVijQITj9y6C",
-      "nome": "aaaaa",
-      "username": "tuofiglio",
-      "favorites": [
-        {
-          "Title": "The Batman",
-          "Year": "2022",
-          "imdbID": "tt1877830",
-          "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BM2MyNTAwZGEtNTAxNC00ODVjLTgzZjUtYmU0YjAzNmQyZDEwXkEyXkFqcGdeQXVyNDc2NTg3NzA@._V1_SX300.jpg"
-        },
-        {
-          "Title": "Batman: The Animated Series",
-          "Year": "1992–1995",
-          "imdbID": "tt0103359",
+          "Title": "Adventure Time",
+          "Year": "2010–2018",
+          "imdbID": "tt1305826",
           "Type": "series",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BOTM3MTRkZjQtYjBkMy00YWE1LTkxOTQtNDQyNGY0YjYzNzAzXkEyXkFqcGdeQXVyOTgwMzk1MTA@._V1_SX300.jpg"
+          "Poster": "https://m.media-amazon.com/images/M/MV5BMGFkNGY4NGMtZjY0NC00YTI0LThiZjMtMjBmZGMzOGU3YTdmXkEyXkFqcGdeQXVyMTM0NTUzNDIy._V1_SX300.jpg"
+        },
+        {
+          "Title": "Adventure Time: Fionna & Cake",
+          "Year": "2023",
+          "imdbID": "tt15248880",
+          "Type": "series",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BNDhjMDk2OTEtM2NhOC00NDNjLWI1ZjgtMWZiMDFkOTFjMDhmXkEyXkFqcGdeQXVyNjY1MTg4Mzc@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Mighty Morphin Power Rangers",
+          "Year": "1993–1996",
+          "imdbID": "tt0106064",
+          "Type": "series",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BMWMxMTgyODAtNTMwNS00ZGVjLTlkODAtZWJlYjIxMGRmZWY0XkEyXkFqcGdeQXVyNTk5ODg4NDA@._V1_SX300.jpg"
+        },
+        {
+          "Title": "RoboCop",
+          "Year": "1987",
+          "imdbID": "tt0093870",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BZWVlYzU2ZjQtZmNkMi00OTc3LTkwZmYtZDVjNmY4OWFmZGJlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
         },
         {
           "Title": "Dungeons & Dragons: Honor Among Thieves",
           "Year": "2023",
           "imdbID": "tt2906216",
           "Type": "movie",
-          "Year": "2016",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BNTBjZTgyZjUtZjk5ZS00NDBmLWI1ZTUtNWJiMmZiMGE0NGVhXkEyXkFqcGdeQXVyMTAxOTY2NTQ@._V1_SX300.jpg",
-          "imdbID": "tt7162186"
+          "Poster": "https://m.media-amazon.com/images/M/MV5BZWM5MTQ3NDMtNGFiMS00Y2E5LWE2ZTUtNzM5MTcyZjM3ODRiXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_SX300.jpg"
         },
         {
-          "Title": "Stage Mother",
+          "Title": "D & D & F: 'Dungeons & Dragons' & 'Futurama'",
+          "Year": "2008",
+          "imdbID": "tt1483352",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BMjAzNDI2MDQyMF5BMl5BanBnXkFtZTcwNTI0OTU3Mg@@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Minecraft Dungeons",
           "Year": "2020",
-          "imdbID": "tt8364138",
-          "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BODNhYmIzMTAtZWNjYS00NzdmLTkxYzItMmViY2JhMmY3MzcyXkEyXkFqcGdeQXVyNjU2NDIxOTM@._V1_SX300.jpg"
+          "imdbID": "tt10711230",
+          "Type": "game",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BZGM4YTIxMDMtNWZiZi00OTEzLTk2MWUtY2NlMzhhODUzYWZiXkEyXkFqcGdeQXVyNzU3Nzk4MDQ@._V1_SX300.jpg"
         },
         {
-          "Title": "La Cicciolina. Godmother of Scandal",
-          "Year": "2016",
-          "imdbID": "tt6181534",
+          "Title": "Interstellar",
+          "Year": "2014",
+          "imdbID": "tt0816692",
           "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BYmEwMzdmZmYtYzM3OS00NTcxLWI3NjYtOTU5ZjliMmU1OGU2XkEyXkFqcGdeQXVyMjMzMTE2MzY@._V1_SX300.jpg"
+          "Poster": "https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
         }
       ],
-      "id": 3
-    },
-    {
-      "email": "test3@test.it",
-      "password": "$2a$10$P3FDPGBTrfQQkaUQ1GfI3uC45tjk5N0JegDD/TucstTV8p02biR8S",
-      "nome": "test3",
-      "username": "achicco",
-      "favorites": [],
-      "id": 4
-    },
-    {
-      "email": "ciaone@ciao.it",
-      "password": "$2a$10$WYZfeyXMh2VAv8J8eGdcI.2Lq2VeHYGhojWtAnKBd1L2quL0lThfq",
-      "nome": "test",
-      "username": "prova27214",
-      "favorites": [],
-      "id": 5
-    },
-    {
-      "email": "test7@test.it",
-      "password": "$2a$10$SxP9wIaNSVJhhvjW2vj4veK/Gu0I21eddepGMrtkFwBuQUbvwftWC",
-      "nome": "test7",
-      "username": "Prena4087",
-      "favorites": [],
-      "id": 6
-    },
-    {
-      "email": "mario@rossi.it",
-      "password": "$2a$10$o15dc62IJ6P37ERuvq/iVe7xgRQwiNAuRK2cngX62TgrRK2KYqGoi",
-      "nome": "Mario",
-      "username": "TitsTicoli3769",
-      "favorites": [],
-      "id": 7
-    },
-    {
-      "email": "testttt@test.it",
-      "password": "$2a$10$vDLuuxWlm1/PTYg1qgthX.F71zuZrJudny1A8inmbhN/6BKWpwuyq",
-      "nome": "",
-      "username": "MustUrbazione8610",
-      "favorites": [],
-      "id": 8
-    },
-    {
-      "email": "lalala@lalala.com",
-      "password": "$2a$10$3cvpx0rXJ9ccaimF.Jh5gulnHoE/pMd1TYoV1/5WxGcL2J8dQ0rBy",
-      "nome": "carlo",
-      "username": "Prena8635",
-      "favorites": [],
-      "id": 9
+      "id": 1
     }
   ]
 }
