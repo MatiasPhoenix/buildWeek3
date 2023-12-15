@@ -14,8 +14,8 @@
     <div class="card col-md-7 col-lg-4 mb-5 mb-lg-0 mt-4">
       <div class="card shadow mt-4">
         <img class="posterImm" src="{{ movie.Poster }}" alt="..." />
-        <p *ngIf="!mostraVideo" (click)="mostraTrailer()" class="text-center pt-3 pb-0 myColorText pointer">-Mostra Trailer-</p>
-        <p *ngIf="mostraVideo" (click)="mostraTrailer()" class="text-center pt-3 pb-0 myColorText pointer">-2Amadre Trailer-</p>
+        <p *ngIf="!mostraVideo" (click)="mostraTrailer()" class="text-center pt-3 pb-0 myColorText pointer">- Mostra Trailer -</p>
+        <p *ngIf="mostraVideo" (click)="mostraTrailer()" class="text-center pt-3 pb-0 myColorText pointer">- 2Amadre Trailer -</p>
         <video *ngIf="mostraVideo" controls poster="">
           <source src="{{ videoPath }}" type="video/mp4">
           Il tuo browser non supporta il tag video.
@@ -70,7 +70,7 @@
           </p>
           <div class="d-flex justify-content-between">
             <div class="myColorText fw-bold">{{movie.Type | uppercase }}</div>
-            <div class="text-light">
+            <div class="text-light movieGen">
               Genere: <span class="text-light fw-bold">{{ movie.Genre }}</span>
             </div>
             <div class="align-items-center">
@@ -114,7 +114,7 @@
                   />
                   <div>
                     <h3 class="myColorText h5 mb-3">Regista</h3>
-                    <p class="mb-0">
+                    <p class="mb-0 text-consigliati">
                       {{ movie.Director }}
                     </p>
                   </div>
@@ -131,7 +131,7 @@
                   />
                   <div>
                     <h3 class="myColorText h5 mb-3">Attori</h3>
-                    <p class="mb-0">
+                    <p class="mb-0 text-consigliati">
                       {{ movie.Actors }}
                     </p>
                   </div>
@@ -148,7 +148,7 @@
                   />
                   <div>
                     <h3 class="myColorText h5 mb-3">Scrittori</h3>
-                    <p class="mb-0">
+                    <p class="mb-0 text-consigliati">
                       {{ movie.Writer }}
                     </p>
                   </div>
@@ -166,7 +166,7 @@
                 />
                 <div>
                   <h3 class="myColorText h5 mb-3">Premi e nomination</h3>
-                  <p class="mb-0">
+                  <p class="mb-0 text-consigliati">
                     {{ movie.Awards }}
                   </p>
                 </div>
@@ -206,14 +206,14 @@
       <!--fine-->
     </div>
     <div class="mt-5 posterImm">
-      <h4><span class="myColorText">2Amadre</span> ti consiglia anche...</h4>
+      <h4><span class="myColorText">2Amadre</span><span class="text-consigliati">ti consiglia anche ...</span></h4>
     </div>
 
     <div class="row container">
       <div *ngFor="let movie of shuffledArray" class="col-md-3 col-lg-2 mx-lg-3 my-3">
         <div class="cardConsigliati">
           <a (click)="scrollToTop()" [routerLink]="['/dashboard/title', movie.imdbID]"><img [src]="movie.Poster" class="card-img-top posterImage" alt="..."></a>
-          <div class="card-body text-center">
+          <div class="card-body text-center cardbodydown">
           </div>
         </div>
       </div>
