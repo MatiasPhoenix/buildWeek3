@@ -5,4 +5,5 @@ export interface iRegister {
   email     : string
   password  : string
   favorites : Imovie[]
+  username? : string
 }

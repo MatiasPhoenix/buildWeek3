@@ -14,31 +14,48 @@
               </button>
             </div>
             <div class="ms-3 titleuser">
-              <h5 class="text-warning">{{username}}</h5>
+              <h5 class="text-warning">{{currentUser.username}}</h5>
             </div>
           </div>
           <div class="p-4 text-black bg-trasparent">
             <div class="d-flex justify-content-end text-center py-1">
-              <div>
+              <div routerLink="favorites" class="pointer">
                 <p class="mb-1 text-light h5 toptext">{{allFavorites.length}}</p>
                 <p class="small text-warning mb-0 me-3 toptext">Preferiti</p>
               </div>
               <div>
-                <p class="mb-1 text-light h5 toptext">253</p>
+                <p class="mb-1 text-light h5 toptext">{{movieWatch}}</p>
                 <p class="small text-warning mb-0 me-3 toptext">Film guardati</p>
               </div>
               <div>
-                <p class="mb-1 text-light h5 toptext">253</p>
+                <p class="mb-1 text-light h5 toptext">{{serieWatch}}</p>
                 <p class="small text-warning mb-0 toptext">Serie TV guardate</p>
               </div>
             </div>
           </div>
           <div class="card-body p-4 text-black">
             <div class="mb-5">
-              <p class="lead info-line fw-normal mb-2">Informazioni Profilo</p>
+              <div class="d-flex justify-content-between">
+                <p class="lead info-line fw-normal mb-2">Informazioni Profilo</p>
+                <button *ngIf="!form" (click)="modificaProfilo()" class="btn btn-warning mb-2">Modifica</button>
+                <button *ngIf="form" (click)="updateData()" class="btn btn-warning mb-2">Salva</button>
+              </div>
               <div class="p-4 backgroundAbout" *ngIf="currentUser">
-                <p class="font-italic mb-1">{{currentUser.nome}}</p>
-                <p class="font-italic mb-1">{{currentUser.email}}</p>
+                <div class="row mb-3">
+                  <h6>Nome</h6>
+                  <p class="font-italic mb-1 col-4">{{currentUser.nome}} </p>
+                  <input *ngIf="form" type="text" class="col-4" placeholder="Nuovo Nome" name="nome" [(ngModel)]="nome">
+                </div>
+                <div class="row mb-3">
+                  <h6>Username</h6>
+                  <p class="font-italic mb-1 col-4">{{currentUser.username}} </p>
+                  <input *ngIf="form" type="text" class="col-4" placeholder="Nuovo Username" name="username" [(ngModel)]="username">
+                </div>
+                <div class="row">
+                  <h6>Email</h6>
+                  <p class="font-italic mb-1 col-4">{{currentUser.email}}</p>
+                  <input *ngIf="form" type="email" class="col-4" placeholder="Nuova Email" name="email" [(ngModel)]="email">
+                </div>
               </div>
             </div>
             <div class="d-flex pref-line justify-content-between align-items-center mb-4">

@@ -4,18 +4,23 @@
 }
 .myColorText{
   color:#FFC107 !important;
+  text-shadow: 1px 1px 6px black;
 }
 
-.cardConsigli{
-  max-height: 256px !important;
-}
+
 .card{
-  border: 0.5px solid rgb(106, 106, 106);
+  border-left: 0.5px solid rgb(106, 106, 106);
+  border-top: 0.5px solid rgb(106, 106, 106);
+  border-right: 0.5px solid rgb(106, 106, 106);
   background: linear-gradient(to bottom, #000000, #080808, #101010, #151515, #1a1a1a);
+  box-shadow: 1px 1px 3px black;
 }
 .card-body{
+  border-top: 1px solid rgb(106, 106, 106);
+  border-bottom: 1px solid rgb(106, 106, 106);
   padding: 10px;
   background: linear-gradient(to bottom, #000000, #080808, #101010, #151515, #1a1a1a);
+  box-shadow: 1px 1px 3px black;
 }
 .posterImm{
   border-bottom: 1px solid rgb(106, 106, 106);
@@ -156,4 +161,23 @@ h3{
 
 .mb-1-6, .my-1-6 {
     margin-bottom: 1.6rem;
+}
+.pointer{
+  cursor: pointer;
+}
+
+.cardConsigliati{
+  transition: 0.3s;
+  border: 1px solid rgb(106, 106, 106);
+}
+
+.text-consigliati{
+  text-shadow: 1px 1px 6px black;
+  padding-left: 8px;
+}
+
+@media (max-width: 400px) {
+.movieGen{
+  margin-left: 10px;
+}
 }
