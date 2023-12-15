@@ -82,6 +82,8 @@ export class DashboardComponent {
       this.addImageUrl()
       this.checkMoviesLength()
       this.loadFavorites()
+      console.log(this.movies);
+
     })
   }
 
